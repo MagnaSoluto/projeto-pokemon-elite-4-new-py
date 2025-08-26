@@ -2,7 +2,7 @@
 
 [![R](https://img.shields.io/badge/R-4.0+-blue.svg)](https://www.r-project.org/)
 [![License](https://img.shields.io/badge/License-MIT-green.svg)](LICENSE)
-[![Status](https://img.shields.io/badge/Status-Ativo-brightgreen.svg)](https://github.com/seu-usuario/projeto-pokemon)
+[![Status](https://img.shields.io/badge/Status-Ativo-brightgreen.svg)](https://github.com/MagnaSoluto/projeto-pokemon-elite-4)
 [![Última Atualização](https://img.shields.io/badge/Última%20Atualização-Dezembro%202024-orange.svg)](https://github.com/seu-usuario/projeto-pokemon/commits/main)
 
 ## 🎯 Sobre o Projeto
@@ -22,8 +22,8 @@ Este projeto utiliza **análise de dados avançada** e **machine learning** em R
 ### **Execução Completa (Recomendado)**
 ```r
 # Clone o repositório
-git clone https://github.com/seu-usuario/projeto-pokemon.git
-cd projeto-pokemon
+git clone https://github.com/MagnaSoluto/projeto-pokemon-elite-4.git
+cd projeto-pokemon-elite-4
 
 # Execute o projeto completo
 source('main.R')
@@ -133,8 +133,8 @@ source('src/utils/test_structure.R')
 ### **Passos**
 1. **Clone o repositório**
    ```bash
-   git clone https://github.com/seu-usuario/projeto-pokemon.git
-   cd projeto-pokemon
+   git clone https://github.com/MagnaSoluto/projeto-pokemon-elite-4.git
+   cd projeto-pokemon-elite-4
    ```
 
 2. **Instale as dependências**
