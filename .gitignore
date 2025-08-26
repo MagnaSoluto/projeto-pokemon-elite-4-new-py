@@ -1,0 +1,146 @@
+# =============================================================================
+# .gitignore para Projeto R - Pokémon Elite dos 4
+# =============================================================================
+
+# =============================================================================
+# ARQUIVOS R ESPECÍFICOS
+# =============================================================================
+
+# Arquivos de sessão R
+.RData
+.Rhistory
+.Rapp.history
+
+# Arquivos de ambiente R
+.Rprofile
+.Renviron
+
+# Arquivos de workspace
+*.Rproj
+*.Rproj.user/
+
+# Arquivos de cache R
+.Rcache/
+.Rcheck/
+
+# =============================================================================
+# ARQUIVOS DE DADOS TEMPORÁRIOS
+# =============================================================================
+
+# Dados processados temporários
+data/*_temp.csv
+data/*_temp.rds
+data/*_processed_temp.*
+
+# Cache de dados
+data/cache/
+data/temp/
+
+# =============================================================================
+# ARQUIVOS DE SAÍDA TEMPORÁRIOS
+# =============================================================================
+
+# Gráficos temporários
+output/plots/*_temp.png
+output/plots/*_temp.pdf
+
+# Tabelas temporárias
+output/tables/*_temp.csv
+output/tables/*_temp.txt
+
+# Modelos temporários
+output/models/*_temp.rds
+
+# =============================================================================
+# ARQUIVOS DE SISTEMA
+# =============================================================================
+
+# Arquivos do macOS
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# Arquivos do Windows
+*.lnk
+*.tmp
+*.temp
+
+# Arquivos do Linux
+*~
+.fuse_hidden*
+.directory
+.Trash-*
+
+# =============================================================================
+# ARQUIVOS DE LOG
+# =============================================================================
+
+# Logs de execução
+*.log
+logs/
+log/
+
+# =============================================================================
+# ARQUIVOS DE CONFIGURAÇÃO LOCAL
+# =============================================================================
+
+# Configurações locais
+config/local_config.R
+config/secrets.R
+.env
+
+# =============================================================================
+# ARQUIVOS DE BACKUP
+# =============================================================================
+
+# Arquivos de backup
+*.bak
+*.backup
+*.old
+*~
+
+# =============================================================================
+# DIRETÓRIOS TEMPORÁRIOS
+# =============================================================================
+
+# Diretórios temporários
+temp/
+tmp/
+cache/
+
+# =============================================================================
+# ARQUIVOS DE PACOTES
+# =============================================================================
+
+# Pacotes R instalados localmente
+packrat/
+renv/
+
+# =============================================================================
+# ARQUIVOS DE RELATÓRIOS TEMPORÁRIOS
+# =============================================================================
+
+# Relatórios temporários
+output/reports/*_temp.md
+output/reports/*_temp.html
+output/reports/*_temp.pdf
+
+# =============================================================================
+# EXCEÇÕES - MANTER ESTES ARQUIVOS
+# =============================================================================
+
+# NÃO ignorar estes arquivos importantes
+!data/*.csv
+!data/*.rds
+!output/plots/*.png
+!output/plots/*.pdf
+!output/tables/*.csv
+!output/tables/*.txt
+!output/models/*.rds
+!output/reports/*.md
+!output/reports/*.html
+!output/reports/*.pdf

@@ -1,0 +1,126 @@
+member,enemy_pokemon,player_pokemon,player_level,result,turns,player_hp_remaining
+Lorelei,Dewgong,Mr. Mime,73,Victory,1,6.199999999999999
+Lorelei,Dewgong,Ponyta,71,Victory,0,35.5
+Lorelei,Dewgong,Butterfree,70,Victory,1,10
+Lorelei,Dewgong,Victreebel,75,Victory,0,60
+Lorelei,Dewgong,Magneton,73,Victory,0,36.5
+Lorelei,Cloyster,Mr. Mime,73,Defeat,1,0
+Lorelei,Cloyster,Ponyta,71,Defeat,1,0
+Lorelei,Cloyster,Butterfree,70,Victory,1,3
+Lorelei,Cloyster,Victreebel,75,Victory,0,60
+Lorelei,Cloyster,Magneton,73,Victory,0,36.5
+Lorelei,Slowbro,Mr. Mime,73,Defeat,2,0
+Lorelei,Slowbro,Ponyta,71,Defeat,1,0
+Lorelei,Slowbro,Butterfree,70,Defeat,2,0
+Lorelei,Slowbro,Victreebel,75,Victory,0,60
+Lorelei,Slowbro,Magneton,73,Victory,0,36.5
+Lorelei,Jynx,Mr. Mime,73,Victory,1,12.2
+Lorelei,Jynx,Ponyta,71,Victory,1,15.5
+Lorelei,Jynx,Butterfree,70,Victory,1,17
+Lorelei,Jynx,Victreebel,75,Victory,1,24
+Lorelei,Jynx,Magneton,73,Victory,1,23.5
+Lorelei,Lapras,Mr. Mime,73,Defeat,1,0
+Lorelei,Lapras,Ponyta,71,Defeat,1,0
+Lorelei,Lapras,Butterfree,70,Defeat,1,0
+Lorelei,Lapras,Victreebel,75,Victory,0,60
+Lorelei,Lapras,Magneton,73,Victory,1,14.5
+Bruno,Onix,Mr. Mime,73,Victory,1,13.2
+Bruno,Onix,Ponyta,71,Victory,0,35.5
+Bruno,Onix,Butterfree,70,Victory,1,6
+Bruno,Onix,Victreebel,75,Victory,0,60
+Bruno,Onix,Magneton,73,Victory,0,36.5
+Bruno,Hitmonchan,Mr. Mime,73,Victory,0,29.2
+Bruno,Hitmonchan,Ponyta,71,Victory,0,35.5
+Bruno,Hitmonchan,Butterfree,70,Defeat,0,0
+Bruno,Hitmonchan,Victreebel,75,Victory,1,28
+Bruno,Hitmonchan,Magneton,73,Victory,1,14.5
+Bruno,Hitmonlee,Mr. Mime,73,Victory,0,29.2
+Bruno,Hitmonlee,Ponyta,71,Victory,0,35.5
+Bruno,Hitmonlee,Butterfree,70,Defeat,0,0
+Bruno,Hitmonlee,Victreebel,75,Victory,1,23
+Bruno,Hitmonlee,Magneton,73,Victory,1,9.5
+Bruno,Onix,Mr. Mime,73,Victory,1,14.2
+Bruno,Onix,Ponyta,71,Victory,0,35.5
+Bruno,Onix,Butterfree,70,Victory,1,2
+Bruno,Onix,Victreebel,75,Victory,0,60
+Bruno,Onix,Magneton,73,Victory,0,36.5
+Bruno,Machamp,Mr. Mime,73,Defeat,1,0
+Bruno,Machamp,Ponyta,71,Defeat,1,0
+Bruno,Machamp,Butterfree,70,Defeat,1,0
+Bruno,Machamp,Victreebel,75,Victory,0,60
+Bruno,Machamp,Magneton,73,Victory,1,4.5
+Agatha,Gengar,Mr. Mime,73,Defeat,0,0
+Agatha,Gengar,Ponyta,71,Victory,1,6.5
+Agatha,Gengar,Butterfree,70,Victory,1,10
+Agatha,Gengar,Victreebel,75,Victory,1,39
+Agatha,Gengar,Magneton,73,Victory,1,21.5
+Agatha,Golbat,Mr. Mime,73,Victory,0,29.2
+Agatha,Golbat,Ponyta,71,Victory,0,35.5
+Agatha,Golbat,Butterfree,70,Defeat,1,0
+Agatha,Golbat,Victreebel,75,Victory,1,4
+Agatha,Golbat,Magneton,73,Victory,1,17.5
+Agatha,Haunter,Mr. Mime,73,Defeat,0,0
+Agatha,Haunter,Ponyta,71,Victory,1,15.5
+Agatha,Haunter,Butterfree,70,Victory,1,20
+Agatha,Haunter,Victreebel,75,Victory,1,42
+Agatha,Haunter,Magneton,73,Victory,1,23.5
+Agatha,Arbok,Mr. Mime,73,Victory,0,29.2
+Agatha,Arbok,Ponyta,71,Victory,0,35.5
+Agatha,Arbok,Butterfree,70,Defeat,0,0
+Agatha,Arbok,Victreebel,75,Defeat,0,0
+Agatha,Arbok,Magneton,73,Victory,1,13.5
+Agatha,Gengar,Mr. Mime,73,Defeat,0,0
+Agatha,Gengar,Ponyta,71,Victory,1,3.5
+Agatha,Gengar,Butterfree,70,Defeat,1,0
+Agatha,Gengar,Victreebel,75,Victory,1,35
+Agatha,Gengar,Magneton,73,Victory,1,18.5
+Lance,Gyarados,Mr. Mime,73,Defeat,1,0
+Lance,Gyarados,Ponyta,71,Defeat,1,0
+Lance,Gyarados,Butterfree,70,Defeat,0,0
+Lance,Gyarados,Victreebel,75,Victory,1,16
+Lance,Gyarados,Magneton,73,Defeat,1,0
+Lance,Dragonair,Mr. Mime,73,Victory,1,0.1999999999999993
+Lance,Dragonair,Ponyta,71,Victory,0,35.5
+Lance,Dragonair,Butterfree,70,Victory,1,4
+Lance,Dragonair,Victreebel,75,Victory,0,60
+Lance,Dragonair,Magneton,73,Victory,0,36.5
+Lance,Dragonair,Mr. Mime,73,Victory,0,29.2
+Lance,Dragonair,Ponyta,71,Victory,0,35.5
+Lance,Dragonair,Butterfree,70,Victory,1,7
+Lance,Dragonair,Victreebel,75,Victory,0,60
+Lance,Dragonair,Magneton,73,Victory,0,36.5
+Lance,Aerodactyl,Mr. Mime,73,Defeat,0,0
+Lance,Aerodactyl,Ponyta,71,Defeat,0,0
+Lance,Aerodactyl,Butterfree,70,Defeat,0,0
+Lance,Aerodactyl,Victreebel,75,Victory,1,23
+Lance,Aerodactyl,Magneton,73,Defeat,1,0
+Lance,Dragonite,Mr. Mime,73,Defeat,1,0
+Lance,Dragonite,Ponyta,71,Defeat,1,0
+Lance,Dragonite,Butterfree,70,Defeat,0,0
+Lance,Dragonite,Victreebel,75,Defeat,1,0
+Lance,Dragonite,Magneton,73,Defeat,0,0
+Champion,Pidgeot,Mr. Mime,73,Defeat,0,0
+Champion,Pidgeot,Ponyta,71,Defeat,0,0
+Champion,Pidgeot,Butterfree,70,Defeat,0,0
+Champion,Pidgeot,Victreebel,75,Victory,1,27
+Champion,Pidgeot,Magneton,73,Defeat,1,0
+Champion,Alakazam,Mr. Mime,73,Victory,1,9.2
+Champion,Alakazam,Ponyta,71,Victory,1,13.5
+Champion,Alakazam,Butterfree,70,Victory,1,17
+Champion,Alakazam,Victreebel,75,Victory,1,42
+Champion,Alakazam,Magneton,73,Victory,1,22.5
+Champion,Rhydon,Mr. Mime,73,Defeat,1,0
+Champion,Rhydon,Ponyta,71,Defeat,1,0
+Champion,Rhydon,Butterfree,70,Defeat,1,0
+Champion,Rhydon,Victreebel,75,Victory,0,60
+Champion,Rhydon,Magneton,73,Defeat,1,0
+Champion,Arcanine,Mr. Mime,73,Defeat,0,0
+Champion,Arcanine,Ponyta,71,Defeat,0,0
+Champion,Arcanine,Butterfree,70,Defeat,0,0
+Champion,Arcanine,Victreebel,75,Defeat,0,0
+Champion,Arcanine,Magneton,73,Defeat,1,0
+Champion,Exeggutor,Mr. Mime,73,Victory,0,29.2
+Champion,Exeggutor,Ponyta,71,Victory,0,35.5
+Champion,Exeggutor,Butterfree,70,Victory,0,42
+Champion,Exeggutor,Victreebel,75,Victory,0,60
+Champion,Exeggutor,Magneton,73,Victory,0,36.5

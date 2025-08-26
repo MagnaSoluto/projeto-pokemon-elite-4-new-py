@@ -1,0 +1,14 @@
+       hp             attack          defense         sp_attack     
+ Min.   : 10.00   Min.   :  5.00   Min.   :  5.00   Min.   : 15.00  
+ 1st Qu.: 45.00   1st Qu.: 51.00   1st Qu.: 50.00   1st Qu.: 45.00  
+ Median : 60.00   Median : 70.00   Median : 65.00   Median : 65.00  
+ Mean   : 64.21   Mean   : 72.91   Mean   : 68.23   Mean   : 67.14  
+ 3rd Qu.: 80.00   3rd Qu.: 92.00   3rd Qu.: 84.00   3rd Qu.: 87.50  
+ Max.   :250.00   Max.   :134.00   Max.   :180.00   Max.   :154.00  
+   sp_defense         speed            total      
+ Min.   : 20.00   Min.   : 15.00   Min.   :195.0  
+ 1st Qu.: 49.00   1st Qu.: 46.50   1st Qu.:320.0  
+ Median : 65.00   Median : 70.00   Median :405.0  
+ Mean   : 66.09   Mean   : 69.07   Mean   :407.6  
+ 3rd Qu.: 80.00   3rd Qu.: 90.00   3rd Qu.:490.0  
+ Max.   :125.00   Max.   :150.00   Max.   :680.0  

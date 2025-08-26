@@ -1,0 +1,6 @@
+name,type1,type2,total,predicted_efficiency,recommended_level,level_range
+Mr. Mime,Psychic,Fairy,460,0.7666064497934322,73,71 - 75
+Ponyta,Fire,NA,410,0.6833816058133249,71,69 - 73
+Butterfree,Bug,Flying,395,0.6584821439822929,70,68 - 72
+Victreebel,Grass,Poison,490,0.8166670980303294,75,73 - 77
+Magneton,Electric,Steel,465,0.7750258709406431,73,71 - 75
