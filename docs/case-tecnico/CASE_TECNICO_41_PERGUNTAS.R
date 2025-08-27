@@ -46,7 +46,7 @@ knitr::opts_chunk$set(
 # =============================================================================
 
 cat("📋 PERGUNTA 1: Importe o seu dataset para o R\n")
-cat("=", paste(paste(rep("=", 50), collapse=""), collapse=""), "\n\n")
+cat("=", "==================================================\n\n")
 
 # Carregar o dataset de Pokémon
 pokemon_data <- read_csv("data/pokemon_data.csv", show_col_types = FALSE)
