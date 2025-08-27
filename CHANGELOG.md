@@ -39,7 +39,7 @@ e este projeto adere ao [Versionamento Semântico](https://semver.org/lang/pt-BR
 ### 📚 Documentação Unificada
 - **README único e moderno** com badges e informações completas
 - **Apresentação executiva** sucinta e objetiva
-- **Case técnico das 41 perguntas** em formato R Notebook
+- **Case técnico das 41 perguntas** em formato R puro (executável)
 - **Instruções de execução** detalhadas e claras
 
 ### 🎮 Funcionalidades Validadas

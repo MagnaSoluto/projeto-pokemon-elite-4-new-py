@@ -2,7 +2,7 @@
 
 [![R](https://img.shields.io/badge/R-4.5.1+-blue.svg)](https://www.r-project.org/)
 [![License](https://img.shields.io/badge/License-MIT-green.svg)](LICENSE)
-[![Status](https://img.shields.io/badge/Status-Concluído-success.svg)]()
+[![Status](https://img.shields.io/badge/Status-Concluído-success.svg)](https://github.com/MagnaSoluto/projeto-pokemon-elite-4.git)
 
 ## 📋 Descrição
 
@@ -46,8 +46,8 @@ Utilizando técnicas avançadas de **análise de dados**, **modelagem estatísti
 
 1. **Clone o repositório**
 ```bash
-git clone <url-do-repositorio>
-cd Projeto_Final_PDA
+git clone https://github.com/MagnaSoluto/projeto-pokemon-elite-4.git
+cd Projeto_Final_PDAprojeto-pokemon-elite-4
 ```
 
 2. **Execute o pipeline completo**
@@ -201,15 +201,17 @@ O projeto inclui um **notebook R completo** que responde às 41 perguntas do cas
 
 Este projeto está licenciado sob a Licença MIT - veja o arquivo [LICENSE](LICENSE) para detalhes.
 
-## 👨‍💻 Autor
+## 👨‍💻 Autores
+**Adriano Carvalho dos Santos** (RA: 10747203)  
+**Jonathas William Freire Borges** (RA: 10747100)
 
-**Case Técnico de Análise com R** - 2024
+**Case Técnico de Análise com R** - 2025 *MBA em Engenharia de Dados - Universidade Presbiteriana Mackenzie*
 
 ## 🙏 Agradecimentos
 
 - Nintendo/Game Freak pelos dados dos Pokémon
 - Comunidade R por ferramentas incríveis
-- Professores e colegas pelo apoio
+- Professor Jonn Martins pelo apoio
 
 ## 📞 Suporte
 

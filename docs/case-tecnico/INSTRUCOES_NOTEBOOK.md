@@ -2,14 +2,14 @@
 
 ## 🎯 **O QUE É O NOTEBOOK?**
 
-O arquivo **`CASE_TECNICO_41_PERGUNTAS.Rmd`** é um **notebook R Markdown** que contém todas as 41 perguntas do case técnico com código executável em R.
+O arquivo **`CASE_TECNICO_41_PERGUNTAS.R`** é um **notebook R puro** que contém todas as 41 perguntas do case técnico com código executável em R.
 
 ## 🚀 **COMO USAR NA APRESENTAÇÃO:**
 
 ### **1. Abrir o Notebook**
 ```r
 # No RStudio, abrir o arquivo:
-# CASE_TECNICO_41_PERGUNTAS.Rmd
+# CASE_TECNICO_41_PERGUNTAS.R
 ```
 
 ### **2. Executar Durante a Apresentação**
@@ -189,7 +189,7 @@ library(reshape2)   # Para heatmaps
 
 ## 📁 **ARQUIVOS PARA ENTREGA:**
 
-1. **📓 CASE_TECNICO_41_PERGUNTAS.Rmd** - **NOTEBOOK PRINCIPAL** ⭐
+1. **📓 CASE_TECNICO_41_PERGUNTAS.R** - **NOTEBOOK PRINCIPAL** ⭐
 2. **📄 RESPOSTA_41_PERGUNTAS_CASE.md** - Documento de texto
 3. **📋 INSTRUCOES_NOTEBOOK.md** - Estas instruções
 4. **📊 RESPOSTA_CASE_TECNICO.md** - Resposta geral ao case
