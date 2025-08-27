@@ -29,7 +29,6 @@ PROJECT_ROOT <- getwd()
 # Diretórios de dados
 DATA_DIR <- file.path(PROJECT_ROOT, "data")
 OUTPUT_DIR <- file.path(PROJECT_ROOT, "output")
-SCRIPTS_DIR <- file.path(PROJECT_ROOT, "scripts")
 DOCS_DIR <- file.path(PROJECT_ROOT, "docs")
 
 # Subdiretórios de saída
@@ -121,7 +120,7 @@ KNITR_OPTS <- list(
 
 # Função para criar diretórios se não existirem
 create_directories <- function() {
-  dirs_to_create <- c(DATA_DIR, OUTPUT_DIR, SCRIPTS_DIR, DOCS_DIR,
+  dirs_to_create <- c(DATA_DIR, OUTPUT_DIR, DOCS_DIR,
                       PLOTS_DIR, TABLES_DIR, MODELS_DIR, REPORTS_DIR)
   
   for (dir in dirs_to_create) {
@@ -186,7 +185,7 @@ get_project_info <- function() {
   cat("📁 Diretórios do projeto:\n")
   cat("   - Raiz:", PROJECT_ROOT, "\n")
   cat("   - Dados:", DATA_DIR, "\n")
-  cat("   - Scripts:", SCRIPTS_DIR, "\n")
+  cat("   - Documentação:", DOCS_DIR, "\n")
   cat("   - Saída:", OUTPUT_DIR, "\n")
   cat("   - Documentação:", DOCS_DIR, "\n\n")
   
