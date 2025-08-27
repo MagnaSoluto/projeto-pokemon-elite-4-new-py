@@ -102,7 +102,7 @@ Todos os resultados foram salvos em:
 
 Para executar a análise completa:
 ```r
-source('scripts/main_analysis.R')
+source('src/core/main_analysis.R')
 ```
 
 ---
