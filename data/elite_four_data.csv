@@ -1,6 +1,7 @@
 member,position,pokemon1,pokemon1_type1,pokemon1_type2,pokemon1_level,pokemon2,pokemon2_type1,pokemon2_type2,pokemon2_level,pokemon3,pokemon3_type1,pokemon3_type2,pokemon3_level,pokemon4,pokemon4_type1,pokemon4_type2,pokemon4_level,pokemon5,pokemon5_type1,pokemon5_type2,pokemon5_level
 Lorelei,1,Dewgong,Water,Ice,54,Cloyster,Water,Ice,53,Slowbro,Water,Psychic,54,Jynx,Ice,Psychic,56,Lapras,Water,Ice,56
-Bruno,2,Onix,Rock,Ground,53,Hitmonchan,Fighting,,55,Hitmonlee,Fighting,,55,Onix,Rock,Ground,56,Machamp,Fighting,,58
-Agatha,3,Gengar,Ghost,Poison,56,Golbat,Poison,Flying,56,Haunter,Ghost,Poison,55,Arbok,Poison,,58,Gengar,Ghost,Poison,60
-Lance,4,Gyarados,Water,Flying,58,Dragonair,Dragon,,56,Dragonair,Dragon,,54,Aerodactyl,Rock,Flying,58,Dragonite,Dragon,Flying,62
-Champion,5,Pidgeot,Normal,Flying,61,Alakazam,Psychic,,59,Rhydon,Ground,Rock,61,Arcanine,Fire,,61,Exeggutor,Grass,Psychic,61,Blastoise,Water,,63
+Bruno,2,Onix,Rock,Ground,53,Hitmonchan,Fighting,None,55,Hitmonlee,Fighting,None,55,Onix,Rock,Ground,56,Machamp,Fighting,None,58
+Agatha,3,Gengar,Ghost,Poison,56,Golbat,Poison,Flying,56,Haunter,Ghost,Poison,55,Arbok,Poison,None,58,Gengar,Ghost,Poison,60
+Lance,4,Gyarados,Water,Flying,58,Dragonair,Dragon,None,56,Dragonair,Dragon,None,54,Aerodactyl,Rock,Flying,58,Dragonite,Dragon,Flying,62
+Champion,5,Pidgeot,Normal,Flying,61,Alakazam,Psychic,None,59,Rhydon,Ground,Rock,61,Arcanine,Fire,None,61,Exeggutor,Grass,Psychic,61
+Champion,5,Blastoise,Water,None,63,None,None,None,0,None,None,None,0,None,None,None,0,None,None,None,0

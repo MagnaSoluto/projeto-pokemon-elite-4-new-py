@@ -18,7 +18,14 @@ cat("📂 Carregando datasets...\n")
 pokemon_data <- read_csv("data/pokemon_data.csv", show_col_types = FALSE)
 
 # Dataset da Elite dos 4
-elite_four_data <- read_csv("data/elite_four_data.csv", show_col_types = FALSE)
+elite_four_data <- read_csv("data/elite_four_data.csv", show_col_types = FALSE, na = c("", "None", "NA"))
+
+# Limpar dados da Elite dos 4
+elite_four_data <- elite_four_data %>%
+  # Substituir "None" por NA
+  mutate(across(everything(), ~ifelse(. == "None", NA, .))) %>%
+  # Remover linhas completamente vazias
+  filter(!is.na(member) & !is.na(pokemon1))
 
 cat("✅ Datasets carregados com sucesso!\n")
 cat("   - Pokémon: ", nrow(pokemon_data), "registros\n")
