@@ -197,14 +197,29 @@ cat("=", "==================================================\n\n")
 # Calcular estatísticas descritivas
 stats_summary <- pokemon_data %>%
   select(hp, attack, defense, sp_attack, sp_defense, speed, total) %>%
-  summarise_all(list(
-    media = ~mean(., na.rm = TRUE),
-    mediana = ~median(., na.rm = TRUE),
-    desvio_padrao = ~sd(., na.rm = TRUE)
-  )) %>%
-  t() %>%
-  as.data.frame() %>%
-  setNames(c("HP", "Attack", "Defense", "Sp_Attack", "Sp_Defense", "Speed", "Total"))
+  summarise(
+    hp_media = mean(hp, na.rm = TRUE),
+    hp_mediana = median(hp, na.rm = TRUE),
+    hp_desvio = sd(hp, na.rm = TRUE),
+    attack_media = mean(attack, na.rm = TRUE),
+    attack_mediana = median(attack, na.rm = TRUE),
+    attack_desvio = sd(attack, na.rm = TRUE),
+    defense_media = mean(defense, na.rm = TRUE),
+    defense_mediana = median(defense, na.rm = TRUE),
+    defense_desvio = sd(defense, na.rm = TRUE),
+    sp_attack_media = mean(sp_attack, na.rm = TRUE),
+    sp_attack_mediana = median(sp_attack, na.rm = TRUE),
+    sp_attack_desvio = sd(sp_attack, na.rm = TRUE),
+    sp_defense_media = mean(sp_defense, na.rm = TRUE),
+    sp_defense_mediana = median(sp_defense, na.rm = TRUE),
+    sp_defense_desvio = sd(sp_defense, na.rm = TRUE),
+    speed_media = mean(speed, na.rm = TRUE),
+    speed_mediana = median(speed, na.rm = TRUE),
+    speed_desvio = sd(speed, na.rm = TRUE),
+    total_media = mean(total, na.rm = TRUE),
+    total_mediana = median(total, na.rm = TRUE),
+    total_desvio = sd(total, na.rm = TRUE)
+  )
 
 cat("Estatísticas descritivas:\n")
 print(stats_summary)
