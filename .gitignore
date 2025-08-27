@@ -144,3 +144,17 @@ output/reports/*_temp.pdf
 !output/reports/*.md
 !output/reports/*.html
 !output/reports/*.pdf
+
+# =============================================================================
+# ARQUIVOS DO GITHUB
+# =============================================================================
+
+# Manter arquivos de configuração do GitHub
+!.github/
+!.github/workflows/
+!.github/ISSUE_TEMPLATE/
+
+# Manter arquivos de documentação
+!CONTRIBUTING.md
+!CHANGELOG.md
+!LICENSE
