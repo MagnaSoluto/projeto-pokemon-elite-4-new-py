@@ -67,7 +67,7 @@ cat("⚔️ ETAPA 6: Simulação de Batalhas\n")
 cat("================================\n")
 
 cat("Executando simulações de batalha...\n")
-battle_results <- source("src/core/05_battle_simulation.R")
+source("src/core/05_battle_simulation.R")
 
 cat("\n")
 
@@ -213,13 +213,7 @@ cat("   - Ajustar conforme necessário\n\n")
 cat("🎮 Boa sorte na Elite dos 4!\n")
 cat("⚔️ Que o melhor treinador vença!\n\n")
 
-# Retornar resultados finais
-return(list(
-  best_team = best_team,
-  level_recommendations = level_recommendations,
-  battle_results = battle_results,
-  victory_rate = victory_rate,
-  pokemon_performance = pokemon_performance,
-  member_difficulty = member_difficulty,
-  best_counters = best_counters
-))
+# Mensagem de conclusão
+cat("✅ Pipeline completo executado com sucesso!\n")
+cat("🎯 Todos os arquivos de saída foram gerados!\n")
+cat("📊 Verifique as pastas output/ para os resultados!\n\n")
