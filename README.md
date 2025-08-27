@@ -29,17 +29,15 @@ Projeto_Final_PDA/
 
 ## 📚 Documentação
 
-### **📖 Projeto**
-- [Índice de Documentos](docs/projeto/INDICE_DOCUMENTOS.md)
-- [README Atualizado](docs/projeto/README_ATUALIZADO.md)
-- [Case Técnico](docs/projeto/case_técnico_análise_com_R.pdf)
-
-### **🔧 Execução**
-- [Instruções de Execução](docs/execucao/INSTRUCOES_EXECUCAO.md)
-
 ### **🏗️ Estrutura**
-- [Estrutura do Código](docs/estrutura/ESTRUTURA_CODIGO.md)
-- [Resumo da Organização](docs/estrutura/RESUMO_ORGANIZACAO.md)
+- [Estrutura do Projeto](docs/ESTRUTURA_PROJETO.md)
+
+### **🎯 Apresentação**
+- [Apresentação Executiva](docs/apresentacao/APRESENTACAO_EXECUTIVA.md)
+
+### **📊 Case Técnico**
+- [41 Perguntas em R Markdown](docs/case-tecnico/CASE_TECNICO_41_PERGUNTAS.Rmd)
+- [Instruções do Notebook](docs/case-tecnico/INSTRUCOES_NOTEBOOK.md)
 
 ## 🛠️ Como Usar
 
