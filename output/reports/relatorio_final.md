@@ -23,8 +23,8 @@ Este relatório apresenta os resultados da análise completa para determinar o m
 
 ## 📊 Resultados das Simulações
 
-- **Total de batalhas simuladas:** 125
-- **Taxa de vitória geral:** 63.2%
+- **Total de batalhas simuladas:** 130
+- **Taxa de vitória geral:** 59.2%
 - **Membro mais difícil:** Champion
 - **Membro mais fácil:** Bruno
 
@@ -32,17 +32,17 @@ Este relatório apresenta os resultados da análise completa para determinar o m
 
 | Pokémon | Taxa de Vitória | Batalhas | Vitórias |
 |---------|----------------|----------|----------|
-| Victreebel | 88% | 25 | 22 |
-| Magneton | 76% | 25 | 19 |
-| Ponyta | 60% | 25 | 15 |
-| Mr. Mime | 48% | 25 | 12 |
-| Butterfree | 44% | 25 | 11 |
+| Victreebel | 84.6% | 26 | 22 |
+| Magneton | 73.1% | 26 | 19 |
+| Ponyta | 57.7% | 26 | 15 |
+| Mr. Mime | 42.3% | 26 | 11 |
+| Butterfree | 38.5% | 26 | 10 |
 
 ## 👑 Dificuldade por Membro
 
 | Membro | Taxa de Vitória | Batalhas | Vitórias |
 |--------|----------------|----------|----------|
-| Champion | 48% | 25 | 12 |
+| Champion | 33.3% | 30 | 10 |
 | Lance | 48% | 25 | 12 |
 | Lorelei | 68% | 25 | 17 |
 | Agatha | 72% | 25 | 18 |
@@ -58,7 +58,7 @@ Este relatório apresenta os resultados da análise completa para determinar o m
 - **Cloyster** → Use **Victreebel** no nível 75 (0 turnos)
 - **Dewgong** → Use **Victreebel** no nível 75 (0 turnos)
 - **Dragonair** → Use **Victreebel** no nível 75 (0 turnos)
-- **Exeggutor** → Use **Victreebel** no nível 75 (0 turnos)
+- **Exeggutor** → Use **Ponyta** no nível 71 (0 turnos)
 - **Gengar** → Use **Victreebel** no nível 75 (1 turnos)
 - **Golbat** → Use **Ponyta** no nível 71 (0 turnos)
 - **Gyarados** → Use **Victreebel** no nível 75 (1 turnos)
@@ -88,7 +88,7 @@ Com base na análise completa dos dados e simulações:
 1. **O quinteto otimizado** foi identificado usando algoritmos genéticos
 2. **Os níveis ideais** foram calculados para maximizar a eficácia
 3. **As estratégias** foram testadas contra todos os membros da Elite dos 4
-4. **A taxa de vitória** geral é de 63.2%
+4. **A taxa de vitória** geral é de 59.2%
 
 ## 📁 Arquivos Gerados
 

@@ -119,8 +119,13 @@ Champion,Arcanine,Ponyta,71,Defeat,0,0
 Champion,Arcanine,Butterfree,70,Defeat,0,0
 Champion,Arcanine,Victreebel,75,Defeat,0,0
 Champion,Arcanine,Magneton,73,Defeat,1,0
-Champion,Exeggutor,Mr. Mime,73,Victory,0,29.2
+Champion,Exeggutor,Mr. Mime,73,Defeat,1,0
 Champion,Exeggutor,Ponyta,71,Victory,0,35.5
-Champion,Exeggutor,Butterfree,70,Victory,0,42
-Champion,Exeggutor,Victreebel,75,Victory,0,60
-Champion,Exeggutor,Magneton,73,Victory,0,36.5
+Champion,Exeggutor,Butterfree,70,Defeat,1,0
+Champion,Exeggutor,Victreebel,75,Victory,1,21
+Champion,Exeggutor,Magneton,73,Victory,1,11.5
+Champion,Blastoise,Mr. Mime,73,Defeat,1,0
+Champion,Blastoise,Ponyta,71,Defeat,1,0
+Champion,Blastoise,Butterfree,70,Defeat,0,0
+Champion,Blastoise,Victreebel,75,Defeat,1,0
+Champion,Blastoise,Magneton,73,Defeat,1,0
