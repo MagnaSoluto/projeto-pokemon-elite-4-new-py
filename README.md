@@ -37,7 +37,7 @@ Jonathas William Freire Borges (RA: 10747100)
 1. **🔍 Análise Exploratória** - 151 Pokémon analisados
 2. **🤖 Modelagem Estatística** - 4 algoritmos comparados
 3. **🧬 Otimização** - Algoritmos genéticos para encontrar o time ideal
-4. **⚔️ Simulação** - 125 batalhas contra todos os membros
+4. **⚔️ Simulação** - 130 batalhas contra todos os membros
 5. **✅ Validação** - Estratégias testadas e validadas
 
 ### 🗄️ **ESTRUTURA DO DATASET**
@@ -78,13 +78,13 @@ power_category = case_when(total >= 500 ~ "Alto", total >= 400 ~ "Médio", ...)
 | **4** | **Ponyta** | Fire | 410 | 69-73 | **57.7%** |
 | **5** | **Butterfree** | Bug/Flying | 395 | 68-72 | **38.5%** |
 
-### 🎯 **TAXA DE VITÓRIA GERAL: 63.2%**
+### 🎯 **TAXA DE VITÓRIA GERAL: 59.2%**
 
 ---
 
 ## 📊 PERFORMANCE VALIDADA
 
-### ⚔️ Resultados das Simulações (125 Batalhas)
+### ⚔️ Resultados das Simulações (130 Batalhas)
 
 | Membro da Elite | Taxa de Vitória | Dificuldade |
 |-----------------|-----------------|-------------|
@@ -336,7 +336,7 @@ source('src/core/05_battle_simulation.R')         # Simulação
 ### 📁 **Entregáveis Completos**
 - ✅ **Dataset processado** e validado (151 Pokémon)
 - ✅ **4 modelos treinados** salvos em formato RDS
-- ✅ **125 batalhas simuladas** com análise completa
+- ✅ **130 batalhas simuladas** com análise completa
 - ✅ **15 visualizações** profissionais geradas
 - ✅ **Relatórios técnicos** detalhados
 - ✅ **Tabelas de dados** processados
@@ -369,7 +369,7 @@ source('src/core/05_battle_simulation.R')         # Simulação
 - **4 modelos** comparados estatisticamente
 - **Validação cruzada** 10-fold para robustez
 - **Algoritmos genéticos** para otimização global
-- **Simulações extensivas** (125 batalhas) para validação
+- **Simulações extensivas** (130 batalhas) para validação
 - **Reprodutibilidade** com seeds fixos
 - **Código fonte** completamente documentado
 - **Metodologia** explicada passo a passo
@@ -416,10 +416,10 @@ source('src/core/05_battle_simulation.R')
 ### 🎯 **Diferenciais Principais**
 - ✅ **Pipeline completo** do início ao fim
 - ✅ **41 perguntas** respondidas com sucesso
-- ✅ **125 batalhas** simuladas e validadas
+- ✅ **130 batalhas** simuladas e validadas
 - ✅ **4 algoritmos** comparados estatisticamente
 - ✅ **Algoritmos genéticos** para otimização
-- ✅ **Taxa de vitória** de 63.2% comprovada
+- ✅ **Taxa de vitória** de 59.2% comprovada
 - ✅ **Código 100% funcional** e documentado
 
 ---
@@ -479,7 +479,7 @@ source('src/core/05_battle_simulation.R')
 
 ---
 
-**📊 151 Pokémon analisados | 4 modelos treinados | 125 batalhas simuladas | 41 perguntas respondidas**
+**📊 151 Pokémon analisados | 4 modelos treinados | 130 batalhas simuladas | 41 perguntas respondidas**
 
 </div>
 
