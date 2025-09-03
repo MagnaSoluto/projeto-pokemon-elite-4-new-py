@@ -254,6 +254,38 @@ type_advantages <- list(
 
 ---
 
+## 🚀 **INSTALAÇÃO E EXECUÇÃO**
+
+### 📋 **Pré-requisitos**
+- **R**: Versão 4.0 ou superior
+- **Sistema**: Windows 10+, macOS 10.14+, Ubuntu 18.04+
+
+### 🎯 **Instalação Rápida**
+```bash
+# 1. Clonar o repositório
+git clone https://github.com/MagnaSoluto/projeto-pokemon-elite-4.git
+cd projeto-pokemon-elite-4
+
+# 2. Executar o projeto
+Rscript main.R
+```
+
+### 🔍 **Verificação de Configuração**
+```bash
+# Testar se tudo está funcionando
+Rscript test_setup.R
+```
+
+### 📦 **Instalação Manual de Pacotes**
+```r
+# Se houver problemas com pacotes
+source('src/utils/install_packages.R')
+```
+
+**📖 Para instruções detalhadas, consulte [INSTALACAO.md](INSTALACAO.md)**
+
+---
+
 ## 🚀 **IMPLEMENTAÇÃO TÉCNICA**
 
 ### 🔧 **Stack Técnico Completo**
