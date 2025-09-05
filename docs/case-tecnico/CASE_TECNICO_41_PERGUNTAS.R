@@ -930,35 +930,51 @@ cat("=", "==================================================\n\n")
 
 # Pipeline complexo com pipe
 cat("RESPOSTA: Executando pipeline complexo com pipe operator:\n")
+
 pipeline_pipe <- pokemon_data %>%
   # Selecione três colunas: duas numéricas e uma categórica
   select(name, type1, attack, defense) %>%
+  
   # Filtre apenas as linhas em que não existam valores ausentes (NA) nessas colunas
   filter(!is.na(attack), !is.na(defense), !is.na(type1)) %>%
+  
   # Crie uma nova coluna que seja a razão entre as duas variáveis numéricas
   mutate(attack_defense_ratio = attack / defense) %>%
+  
   # Agrupe os dados pela variável categórica
   group_by(type1) %>%
+  
   # Calcule a média, a mediana e o desvio padrão da nova coluna criada, para cada grupo
   summarise(
     media_ratio = mean(attack_defense_ratio, na.rm = TRUE),
     mediana_ratio = median(attack_defense_ratio, na.rm = TRUE),
     desvio_ratio = sd(attack_defense_ratio, na.rm = TRUE),
-    n_pokemon = n()
+    n_pokemon = n(),
+    .groups = "drop"  # Evita agrupamentos residuais após summarise
   ) %>%
-  # Reorganize os resultados em formato largo (wide), de forma que cada estatística vire uma coluna separada
-  pivot_wider(names_from = type1, values_from = c(media_ratio, mediana_ratio, desvio_ratio)) %>%
-  # Ordene o resultado pela média em ordem decrescente
-  arrange(desc(media_ratio))
+  
+  # Ordene os resultados pela média da razão em ordem decrescente
+  arrange(desc(media_ratio)) %>%
+  
+  # Reorganize os resultados em formato largo (wide)
+  pivot_wider(
+    names_from = type1,
+    values_from = c(media_ratio, mediana_ratio, desvio_ratio)
+  )
 
+# Exibe o resultado
 print(pipeline_pipe)
+
+# Análise do pipeline
 cat("\n")
 cat("ANÁLISE DO PIPELINE:\n")
 cat("- 7 operações sequenciais com pipe\n")
 cat("- Seleção, filtro, mutação\n")
 cat("- Agrupamento e sumarização\n")
+cat("- Ordenação antes do pivot_wider\n")
 cat("- Pivot para formato wide\n")
-cat("- Ordenação final\n\n")
+cat("- Resultado final organizado por média decrescente\n\n")
+
 
 # =============================================================================
 # 📋 PERGUNTA 40: Construa um pipeline seguindo as instruções abaixo
