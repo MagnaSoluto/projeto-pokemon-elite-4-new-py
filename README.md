@@ -1,22 +1,21 @@
-# 🎮 Projeto Pokémon Elite dos 4 - Análise com R
+# 🎮 Projeto Pokémon Elite dos 4 - Sistema Python
 
-[![R](https://img.shields.io/badge/R-4.5.1+-blue.svg)](https://www.r-project.org/)
+[![Python](https://img.shields.io/badge/Python-3.8+-blue.svg)](https://www.python.org/)
 [![License](https://img.shields.io/badge/License-MIT-green.svg)](LICENSE)
-[![Status](https://img.shields.io/badge/Status-Concluído-success.svg)](https://github.com/MagnaSoluto/projeto-pokemon-elite-4.git)
-[![Case Técnico](https://img.shields.io/badge/Case_Técnico-41_Perguntas-orange.svg)](docs/case-tecnico/)
-[![Simulações](https://img.shields.io/badge/Simulações-125_Batalhas-red.svg)](output/tables/)
-[![Modelos](https://img.shields.io/badge/Modelos-4_Algoritmos-purple.svg)](output/models/)
+[![Status](https://img.shields.io/badge/Status-Em_Desenvolvimento-orange.svg)](https://github.com/MagnaSoluto/projeto-pokemon-elite-4-new-py.git)
+[![Pokémon](https://img.shields.io/badge/Pokémon-GBA_FireRed/LeafGreen-red.svg)](https://bulbapedia.bulbagarden.net/wiki/Pokémon_FireRed_and_LeafGreen_Versions)
+[![Simulações](https://img.shields.io/badge/Simulações-100%2B_Batalhas-red.svg)](output/)
+[![Algoritmos](https://img.shields.io/badge/Algoritmos-Genéticos-purple.svg)](pokemon_elite_four/)
 
 ---
 
 <div align="center">
 
-**🎯 CASE TÉCNICO DE ANÁLISE COM R**  
+**🎯 SISTEMA COMPLETO DE ANÁLISE E SIMULAÇÃO POKÉMON**  
 *MBA em Engenharia de Dados - Universidade Presbiteriana Mackenzie*
 
-**👨‍💻 Autores:**  
-Adriano Carvalho dos Santos (RA: 10747203)  
-Jonathas William Freire Borges (RA: 10747100)
+**👨‍💻 Autor:**  
+Adriano Carvalho dos Santos (RA: 10747203)
 
 **⚔️ Que o melhor treinador vença na Elite dos 4! ⚔️**
 
@@ -26,7 +25,7 @@ Jonathas William Freire Borges (RA: 10747100)
 
 ## 🎯 PROBLEMA RESOLVIDO
 
-**"Qual é o melhor quinteto de Pokémon e em qual nível para vencer a Elite dos 4 no Red/Green?"**
+**"Qual é o melhor sexteto de Pokémon e em qual nível para vencer a Elite dos 4 no FireRed/LeafGreen (GBA)?"**
 
 ---
 
