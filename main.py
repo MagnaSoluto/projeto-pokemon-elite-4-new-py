@@ -281,12 +281,15 @@ def create_demo_team(pokemon_database: List[Pokemon]) -> PokemonTeam:
     for name in demo_names:
         pokemon = next((p for p in pokemon_database if p.name == name), None)
         if pokemon:
+            # Ajusta nível para competir com Elite Four
+            pokemon.level = 60
             demo_pokemon.append(pokemon)
     
     # Completa com Pokémon aleatórios se necessário
     while len(demo_pokemon) < 6:
         random_pokemon = next((p for p in pokemon_database if p not in demo_pokemon), None)
         if random_pokemon:
+            random_pokemon.level = 60
             demo_pokemon.append(random_pokemon)
     
     return PokemonTeam(demo_pokemon[:6])

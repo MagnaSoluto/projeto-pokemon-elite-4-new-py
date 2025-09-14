@@ -64,21 +64,25 @@ class TeamOptimizer:
         return population
     
     def calculate_team_fitness(self, team: PokemonTeam) -> float:
-        """Calcula fitness de uma equipe"""
+        """Calcula fitness de uma equipe baseado em performance real"""
+        
+        # Ajusta níveis para competir com Elite Four
+        for pokemon in team.pokemon:
+            pokemon.level = 60  # Nível competitivo
         
         # Análise da equipe
         team_analysis = self.data_processor.create_team_analysis(team.pokemon)
         
-        # Score baseado em métricas da equipe
-        efficiency_score = team_analysis.get('avg_efficiency', 0) * 0.3
-        balance_score = team_analysis.get('avg_balance', 0) * 0.2
-        type_coverage_score = (team_analysis.get('unique_types', 0) / 15) * 0.2
+        # Score de batalha contra Elite Four (peso maior)
+        battle_score = self._calculate_battle_performance(team)
         
-        # Score de batalha contra Elite Four
-        battle_score = self._calculate_battle_performance(team) * 0.3
+        # Score baseado em métricas da equipe (peso menor)
+        efficiency_score = team_analysis.get('avg_efficiency', 0) * 0.1
+        balance_score = team_analysis.get('avg_balance', 0) * 0.1
+        type_coverage_score = (team_analysis.get('unique_types', 0) / 15) * 0.1
         
-        # Score final
-        total_score = efficiency_score + balance_score + type_coverage_score + battle_score
+        # Score final (foco na vitória real)
+        total_score = battle_score * 0.7 + efficiency_score + balance_score + type_coverage_score
         
         return total_score
     
@@ -91,7 +95,7 @@ class TeamOptimizer:
         # Testa contra cada membro da Elite Four
         for member in self.elite_four.get_all_members():
             # Simula múltiplas batalhas
-            for _ in range(10):  # 10 simulações por membro
+            for _ in range(5):  # 5 simulações por membro (mais rápido)
                 battle_log = self.battle_system.battle_teams(team, member.pokemon_team)
                 total_battles += 1
                 
@@ -101,7 +105,14 @@ class TeamOptimizer:
         # Taxa de vitória
         win_rate = total_wins / total_battles if total_battles > 0 else 0
         
-        return win_rate
+        # Bonus por vitórias contra membros difíceis
+        difficulty_bonus = 0
+        if win_rate > 0.5:  # Se ganha mais de 50%
+            difficulty_bonus = 0.2
+        elif win_rate > 0.3:  # Se ganha mais de 30%
+            difficulty_bonus = 0.1
+        
+        return min(1.0, win_rate + difficulty_bonus)
     
     def tournament_selection(self, population: List[PokemonTeam], tournament_size: int = 3) -> PokemonTeam:
         """Seleção por torneio"""

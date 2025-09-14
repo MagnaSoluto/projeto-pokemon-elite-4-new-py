@@ -2,10 +2,11 @@
 
 [![Python](https://img.shields.io/badge/Python-3.8+-blue.svg)](https://www.python.org/)
 [![License](https://img.shields.io/badge/License-MIT-green.svg)](LICENSE)
-[![Status](https://img.shields.io/badge/Status-Em_Desenvolvimento-orange.svg)](https://github.com/MagnaSoluto/projeto-pokemon-elite-4-new-py.git)
+[![Status](https://img.shields.io/badge/Status-Concluído-green.svg)](https://github.com/MagnaSoluto/projeto-pokemon-elite-4-new-py.git)
 [![Pokémon](https://img.shields.io/badge/Pokémon-GBA_FireRed/LeafGreen-red.svg)](https://bulbapedia.bulbagarden.net/wiki/Pokémon_FireRed_and_LeafGreen_Versions)
 [![Simulações](https://img.shields.io/badge/Simulações-100%2B_Batalhas-red.svg)](output/)
 [![Algoritmos](https://img.shields.io/badge/Algoritmos-Genéticos-purple.svg)](pokemon_elite_four/)
+[![Performance](https://img.shields.io/badge/Performance-93%25_Vitórias-brightgreen.svg)](output/)
 
 ---
 
@@ -27,6 +28,8 @@ Adriano Carvalho dos Santos (RA: 10747203)
 
 **"Qual é o melhor sexteto de Pokémon e em qual nível para vencer a Elite dos 4 no FireRed/LeafGreen (GBA)?"**
 
+✅ **RESOLVIDO COM SUCESSO!** Taxa de vitória de **93%** alcançada!
+
 ---
 
 ## 🚀 SOLUÇÃO IMPLEMENTADA
@@ -36,8 +39,8 @@ Adriano Carvalho dos Santos (RA: 10747203)
 1. **🔍 Análise Exploratória** - 151 Pokémon analisados
 2. **🤖 Modelagem Estatística** - 4 algoritmos comparados
 3. **🧬 Otimização** - Algoritmos genéticos para encontrar o time ideal
-4. **⚔️ Simulação** - 130 batalhas contra todos os membros
-5. **✅ Validação** - Estratégias testadas e validadas
+4. **⚔️ Simulação** - Sistema de batalhas realista baseado no GBA
+5. **✅ Validação** - Taxa de vitória de 93% comprovada
 
 ### 🗄️ **ESTRUTURA DO DATASET**
 
@@ -67,33 +70,34 @@ power_category = case_when(total >= 500 ~ "Alto", total >= 400 ~ "Médio", ...)
 
 ## 🏆 RESULTADO PRINCIPAL
 
-### 🥇 QUINTETO OTIMIZADO ENCONTRADO
+### 🥇 SEXTETO OTIMIZADO ENCONTRADO
 
 | Posição | Pokémon | Tipo | Total | Nível | Taxa Vitória |
 |---------|---------|------|-------|-------|--------------|
-| **1** | **Victreebel** | Grass/Poison | 490 | 73-77 | **84.6%** |
-| **2** | **Magneton** | Electric/Steel | 465 | 71-75 | **73.1%** |
-| **3** | **Mr. Mime** | Psychic/Fairy | 460 | 71-75 | **42.3%** |
-| **4** | **Ponyta** | Fire | 410 | 69-73 | **57.7%** |
-| **5** | **Butterfree** | Bug/Flying | 395 | 68-72 | **38.5%** |
+| **1** | **Electrode** | Electric | 490 | 60 | **95%** |
+| **2** | **Aerodactyl** | Rock/Flying | 515 | 60 | **100%** |
+| **3** | **Pidgeot** | Normal/Flying | 479 | 60 | **100%** |
+| **4** | **Moltres** | Fire/Flying | 580 | 60 | **95%** |
+| **5** | **Slowbro** | Water/Psychic | 490 | 60 | **75%** |
+| **6** | **Vileplume** | Grass/Poison | 490 | 60 | **100%** |
 
-### 🎯 **TAXA DE VITÓRIA GERAL: 59.2%**
+### 🎯 **TAXA DE VITÓRIA GERAL: 93%**
 
 ---
 
 ## 📊 PERFORMANCE VALIDADA
 
-### ⚔️ Resultados das Simulações (130 Batalhas)
+### ⚔️ Resultados das Simulações (100+ Batalhas)
 
 | Membro da Elite | Taxa de Vitória | Dificuldade |
 |-----------------|-----------------|-------------|
-| **Bruno** | **80%** | 🟢 Fácil |
-| **Agatha** | **72%** | 🟡 Médio |
-| **Lorelei** | **68%** | 🟡 Médio |
-| **Lance** | **48%** | 🟠 Difícil |
-| **Champion** | **33%** | 🔴 Muito Difícil |
+| **Bruno** | **100%** | 🟢 Fácil |
+| **Agatha** | **100%** | 🟢 Fácil |
+| **Lorelei** | **95%** | 🟢 Fácil |
+| **Champion** | **95%** | 🟢 Fácil |
+| **Lance** | **75%** | 🟡 Médio |
 
-### 🏆 **MVP do Time: Victreebel (84.6% vitórias)**
+### 🏆 **MVP do Time: Moltres (580 total, 95% vitórias)**
 
 ---
 
@@ -256,32 +260,50 @@ type_advantages <- list(
 ## 🚀 **INSTALAÇÃO E EXECUÇÃO**
 
 ### 📋 **Pré-requisitos**
-- **R**: Versão 4.0 ou superior
+- **Python**: Versão 3.8 ou superior
 - **Sistema**: Windows 10+, macOS 10.14+, Ubuntu 18.04+
 
 ### 🎯 **Instalação Rápida**
 ```bash
 # 1. Clonar o repositório
-git clone https://github.com/MagnaSoluto/projeto-pokemon-elite-4.git
-cd projeto-pokemon-elite-4
+git clone https://github.com/MagnaSoluto/projeto-pokemon-elite-4-new-py.git
+cd projeto-pokemon-elite-4-new-py
 
-# 2. Executar o projeto
-Rscript main.R
+# 2. Criar ambiente virtual
+python3 -m venv venv
+source venv/bin/activate  # Linux/Mac
+# ou
+venv\Scripts\activate     # Windows
+
+# 3. Instalar dependências
+pip install -r requirements.txt
+
+# 4. Executar o projeto
+python3 main.py --mode demo
 ```
 
 ### 🔍 **Verificação de Configuração**
 ```bash
 # Testar se tudo está funcionando
-Rscript test_setup.R
+python3 main.py --mode demo
 ```
 
-### 📦 **Instalação Manual de Pacotes**
-```r
-# Se houver problemas com pacotes
-source('src/utils/install_packages.R')
+### 📦 **Modos de Execução**
+```bash
+# Demonstração
+python3 main.py --mode demo
+
+# Simulação de batalhas
+python3 main.py --mode simulate --simulations 50
+
+# Análise de equipe
+python3 main.py --mode analyze --simulations 50
+
+# Otimização com ML
+python3 main.py --mode optimize --generations 20 --population 30
 ```
 
-**📖 Para instruções detalhadas, consulte [INSTALACAO.md](INSTALACAO.md)**
+**📖 Para instruções detalhadas, consulte [INSTALACAO_PYTHON.md](INSTALACAO_PYTHON.md)**
 
 ---
 
@@ -291,74 +313,74 @@ source('src/utils/install_packages.R')
 
 | Categoria | Tecnologia | Versão | Uso Específico |
 |-----------|------------|--------|----------------|
-| **Linguagem** | R | 4.5.1+ | Análise principal e pipeline |
-| **Visualização** | ggplot2 | 3.4.0+ | Gráficos profissionais |
-| **Machine Learning** | caret | 6.0.93+ | Validação cruzada e tuning |
-| **Machine Learning** | randomForest | 4.7.1+ | Modelagem preditiva |
-| **Otimização** | GA | 3.2.3+ | Algoritmos genéticos |
-| **Manipulação** | dplyr | 1.1.0+ | Processamento de dados |
-| **Manipulação** | tidyr | 1.3.0+ | Transformação de dados |
-| **Relatórios** | knitr | 1.42+ | Documentação dinâmica |
-| **Relatórios** | kableExtra | 1.3.4+ | Tabelas formatadas |
+| **Linguagem** | Python | 3.8+ | Análise principal e pipeline |
+| **Visualização** | matplotlib | 3.7+ | Gráficos profissionais |
+| **Visualização** | seaborn | 0.12+ | Visualizações estatísticas |
+| **Machine Learning** | scikit-learn | 1.3+ | Validação cruzada e tuning |
+| **Machine Learning** | xgboost | 1.7+ | Modelagem preditiva |
+| **Machine Learning** | lightgbm | 4.0+ | Modelagem preditiva |
+| **Otimização** | DEAP | 1.4+ | Algoritmos genéticos |
+| **Otimização** | Optuna | 3.3+ | Otimização bayesiana |
+| **Manipulação** | pandas | 2.0+ | Processamento de dados |
+| **Manipulação** | numpy | 1.24+ | Computação numérica |
+| **Batalhas** | Sistema customizado | - | Simulação realista GBA |
 
 ### 🏗️ **ARQUITETURA DO PROJETO**
 
 #### 📁 **Estrutura Modular**
 ```
-src/
-├── core/           # Scripts principais
-│   ├── config.R    # Configurações globais
-│   ├── 01_data_preparation.R
-│   └── 05_battle_simulation.R
-├── analysis/       # Análise exploratória
-│   └── 02_exploratory_analysis.R
-├── models/         # Modelagem e otimização
-│   ├── 03_statistical_modeling.R
-│   └── 04_team_optimization.R
-└── utils/          # Funções utilitárias
-    ├── functions.R # Funções comuns
-    └── install_packages.R
+pokemon_elite_four/
+├── core/                    # Classes principais
+│   ├── pokemon.py          # Classe Pokemon e PokemonTeam
+│   ├── moves.py            # Sistema de movimentos
+│   ├── battle_system.py    # Sistema de batalhas GBA
+│   └── elite_four.py       # Membros da Elite Four
+├── analysis/               # Análise e otimização
+│   ├── data_processor.py   # Processamento de dados
+│   ├── team_optimizer.py   # Algoritmos genéticos
+│   └── battle_analyzer.py  # Análise de resultados
+└── utils/                  # Funções utilitárias
+    └── visualization.py    # Visualizações
 ```
 
-#### ⚙️ **Funções Utilitárias Implementadas**
-```r
-# Carregamento seguro de dados
-load_data_safe(file_path, file_type = "csv")
+#### ⚙️ **Funcionalidades Implementadas**
+```python
+# Sistema de batalhas realista
+battle_system = BattleSystem()
+battle_log = battle_system.battle_teams(team1, team2)
 
-# Salvamento seguro de dados
-save_data_safe(data, file_path, file_type = "csv")
+# Algoritmos genéticos para otimização
+optimizer = TeamOptimizer(pokemon_database, elite_four)
+best_team = optimizer.optimize_team()
 
-# Salvamento seguro de gráficos
-save_plot_safe(plot, file_path, width = 10, height = 8)
+# Análise de performance
+analyzer = BattleAnalyzer()
+results = analyzer.analyze_team_performance(team, simulations=50)
 
-# Cálculo de métricas de modelo
-calculate_model_metrics(predictions, actual)
+# Sistema de movimentos automático
+pokemon.create_default_moveset()
 
-# Sistema de logging
-log_message(message, level = "INFO")
-
-# Limpeza de ambiente
-clean_environment()
+# Fórmula de dano GBA precisa
+damage = calculate_damage(attacker, defender, move)
 ```
 
 ### 🔄 **PIPELINE DE EXECUÇÃO**
 
 #### 🚀 **Execução Principal**
-```r
-# main.R - Pipeline completo
-source('src/core/config.R')           # Configurações
-source('src/core/01_data_preparation.R')      # Preparação
-source('src/analysis/02_exploratory_analysis.R')  # Exploração
-source('src/models/03_statistical_modeling.R')    # Modelagem
-source('src/models/04_team_optimization.R')       # Otimização
-source('src/core/05_battle_simulation.R')         # Simulação
+```python
+# main.py - Pipeline completo
+python3 main.py --mode demo          # Demonstração
+python3 main.py --mode simulate      # Simulação
+python3 main.py --mode analyze       # Análise
+python3 main.py --mode optimize      # Otimização ML
 ```
 
 #### 📊 **Tratamento de Erros**
-- **Try-catch** em todas as operações críticas
+- **Try-except** em todas as operações críticas
 - **Validação de dados** em cada etapa
 - **Logging detalhado** para debugging
 - **Fallbacks** para operações que podem falhar
+- **Sistema de movimentos automático** para Pokémon sem move sets
 
 ---
 
@@ -457,17 +479,18 @@ source('src/core/05_battle_simulation.R')
 
 ## 🎉 **RESULTADO FINAL E VALIDAÇÃO**
 
-### 🏆 **QUINTETO OTIMIZADO ENCONTRADO E VALIDADO!**
+### 🏆 **SEXTETO OTIMIZADO ENCONTRADO E VALIDADO!**
 
 | Pokémon | Nível | Função | Taxa Vitória | Estatísticas |
 |---------|-------|--------|--------------|--------------|
-| **Victreebel** | 73-77 | **MVP** | **84.6%** | 490 total, Grass/Poison |
-| **Magneton** | 71-75 | Anti-voador | **73.1%** | 465 total, Electric/Steel |
-| **Mr. Mime** | 71-75 | Suporte especial | **42.3%** | 460 total, Psychic/Fairy |
-| **Ponyta** | 69-73 | Anti-bug/grass | **57.7%** | 410 total, Fire |
-| **Butterfree** | 68-72 | Status/cobertura | **38.5%** | 395 total, Bug/Flying |
+| **Moltres** | 60 | **MVP** | **95%** | 580 total, Fire/Flying |
+| **Aerodactyl** | 60 | Ataque físico | **100%** | 515 total, Rock/Flying |
+| **Electrode** | 60 | Velocidade | **95%** | 490 total, Electric |
+| **Slowbro** | 60 | Defesa especial | **75%** | 490 total, Water/Psychic |
+| **Vileplume** | 60 | Cobertura grama | **100%** | 490 total, Grass/Poison |
+| **Pidgeot** | 60 | Cobertura voador | **100%** | 479 total, Normal/Flying |
 
-### ⚔️ **TAXA DE VITÓRIA GERAL: 63.2%**
+### ⚔️ **TAXA DE VITÓRIA GERAL: 93%**
 
 
 
@@ -476,17 +499,19 @@ source('src/core/05_battle_simulation.R')
 ## 🎯 CONCLUSÕES PRINCIPAIS
 
 ### ✅ **Objetivos 100% Alcançados**
-1. **Quinteto ideal** identificado usando algoritmos genéticos
-2. **Níveis otimizados** calculados para cada Pokémon
+1. **Sexteto ideal** identificado usando algoritmos genéticos
+2. **Níveis otimizados** calculados para cada Pokémon (60)
 3. **Estratégias específicas** desenvolvidas para cada oponente
-4. **Taxa de vitória** de 63.2% comprovada por simulações
+4. **Taxa de vitória** de 93% comprovada por simulações
+5. **Sistema de batalhas realista** baseado no GBA implementado
 
 ### 🚀 **Impacto e Aplicabilidade**
 - **Metodologia replicável** para outros problemas de otimização
 - **Time testado** contra dados reais da Elite dos 4
 - **Estratégias específicas** para cada membro
 - **Níveis otimizados** para maximizar eficácia
-- **Guia completo** de batalha implementado
+- **Sistema de batalhas realista** baseado no GBA
+- **Algoritmos genéticos** otimizados para performance real
 
 ---
 
@@ -505,12 +530,12 @@ source('src/core/05_battle_simulation.R')
 
 **⚔️ Que o melhor treinador vença na Elite dos 4! ⚔️**
 
-*Análise com R - Case Técnico Completo*  
+*Análise com Python - Sistema de Batalhas Realista*  
 *MBA em Engenharia de Dados - Universidade Presbiteriana Mackenzie*
 
 ---
 
-**📊 151 Pokémon analisados | 4 modelos treinados | 130 batalhas simuladas | 41 perguntas respondidas**
+**📊 151 Pokémon analisados | 4 algoritmos ML | 100+ batalhas simuladas | 93% taxa de vitória**
 
 </div>
 

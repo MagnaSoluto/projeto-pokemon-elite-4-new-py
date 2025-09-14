@@ -219,7 +219,7 @@ class BattleSystem:
         move: Move,
         critical_hit: bool = False
     ) -> int:
-        """Calcula dano baseado na fórmula do GBA"""
+        """Calcula dano baseado na fórmula do GBA (FireRed/LeafGreen)"""
         
         # Determina se é ataque físico ou especial
         if move.category == MoveCategory.PHYSICAL:
@@ -231,17 +231,11 @@ class BattleSystem:
         else:  # STATUS
             return 0
         
-        # Fórmula de dano do GBA
-        level_factor = (2 * attacker.level + 10) / 250
+        # Fórmula de dano do GBA (FireRed/LeafGreen)
+        # Base: ((2 * Level + 10) * Power * Attack / Defense / 50) + 2
         
-        # Modificador de poder
-        power_modifier = move.power
-        
-        # Modificador de ataque/defesa
-        stat_modifier = attack_stat / defense_stat
-        
-        # Modificador base
-        base_damage = level_factor * power_modifier * stat_modifier + 2
+        # Cálculo base do dano (fórmula Pokémon real)
+        base_damage = ((2 * attacker.level + 10) * move.power * attack_stat / defense_stat / 50) + 2
         
         # Modificador de efetividade
         effectiveness = TypeEffectiveness.get_effectiveness(
@@ -258,8 +252,11 @@ class BattleSystem:
         # Cálculo final
         damage = int(base_damage * effectiveness * critical_modifier * variation)
         
-        # Mínimo de 1 de dano
-        return max(1, damage)
+        # Mínimo de 1 de dano, máximo de 4x o HP do defensor
+        max_damage = defender.max_hp * 4
+        damage = max(1, min(damage, max_damage))
+        
+        return damage
     
     def is_critical_hit(self, attacker: Pokemon, move: Move) -> bool:
         """Determina se é golpe crítico"""
@@ -352,9 +349,22 @@ class BattleSystem:
         
         # Movimentos padrão se não fornecidos
         if pokemon1_moves is None:
-            pokemon1_moves = [move for move in pokemon1.move_set.moves if move.category != MoveCategory.STATUS]
+            if pokemon1.move_set is not None:
+                pokemon1_moves = [move for move in pokemon1.move_set.moves if move.category != MoveCategory.STATUS]
+            else:
+                # Move set padrão se não existir
+                from .moves import create_default_moveset
+                pokemon1.move_set = create_default_moveset(pokemon1.type1)
+                pokemon1_moves = [move for move in pokemon1.move_set.moves if move.category != MoveCategory.STATUS]
+        
         if pokemon2_moves is None:
-            pokemon2_moves = [move for move in pokemon2.move_set.moves if move.category != MoveCategory.STATUS]
+            if pokemon2.move_set is not None:
+                pokemon2_moves = [move for move in pokemon2.move_set.moves if move.category != MoveCategory.STATUS]
+            else:
+                # Move set padrão se não existir
+                from .moves import create_default_moveset
+                pokemon2.move_set = create_default_moveset(pokemon2.type1)
+                pokemon2_moves = [move for move in pokemon2.move_set.moves if move.category != MoveCategory.STATUS]
         
         turns = []
         turn_number = 1

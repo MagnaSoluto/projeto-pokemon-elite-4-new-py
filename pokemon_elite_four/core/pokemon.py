@@ -74,7 +74,7 @@ class Pokemon:
         self.level = level
         self.current_hp = self.max_hp
         self.status_conditions = []
-        self.move_set = []
+        self.move_set = None  # Será inicializado depois
         
     @property
     def max_hp(self) -> int:

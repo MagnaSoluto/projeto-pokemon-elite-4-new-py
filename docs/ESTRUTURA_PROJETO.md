@@ -1,106 +1,108 @@
-# 🏗️ ESTRUTURA DO PROJETO POKÉMON ELITE DOS 4
+# 🏗️ ESTRUTURA DO PROJETO POKÉMON ELITE DOS 4 (Python)
 
 ## 🎯 Visão Geral
 
-Este documento consolida **TODA** a informação sobre a estrutura e organização do projeto.
+Este documento consolida **TODA** a informação sobre a estrutura e organização do projeto em Python. O projeto foi migrado de R para Python com melhorias significativas na performance e realismo das simulações.
 
 ## 📁 Estrutura de Diretórios
 
 ```
-Projeto_Final_PDA/
-├── 🚀 main.R                    # Execução principal
-├── 📦 src/                      # Código fonte organizado
-│   ├── 🔧 core/                # Funcionalidades principais
-│   │   ├── config.R           # Configurações
-│   │   ├── setup.R            # Setup do ambiente
-│   │   ├── 01_data_preparation.R
-│   │   ├── 05_battle_simulation.R
-│   │   ├── main_analysis.R    # Análise principal
-│   │   └── exemplo_execucao.R # Exemplo de uso
-│   ├── 🔍 analysis/            # Análises exploratórias
-│   │   └── 02_exploratory_analysis.R
-│   ├── 📊 models/              # Modelagem e otimização
-│   │   ├── 03_statistical_modeling.R
-│   │   └── 04_team_optimization.R
-│   ├── 🛠️  utils/              # Funções utilitárias
-│   │   ├── functions.R        # Funções comuns
-│   │   ├── meu_pipeline.R     # Pipeline personalizado
-│   │   ├── install_packages.R # Instalação de pacotes
-│   │   └── test_structure.R   # Testes de estrutura
-│   └── 📈 visualization/       # Visualizações (futuro)
+Projeto_Final_PDA_Python/
+├── 🚀 main.py                   # Execução principal
+├── 📦 pokemon_elite_four/       # Pacote Python principal
+│   ├── 🔧 core/                # Classes principais
+│   │   ├── pokemon.py          # Classe Pokemon e PokemonTeam
+│   │   ├── moves.py            # Sistema de movimentos
+│   │   ├── battle_system.py    # Sistema de batalhas GBA
+│   │   └── elite_four.py       # Membros da Elite Four
+│   ├── 🔍 analysis/            # Análise e otimização
+│   │   ├── data_processor.py   # Processamento de dados
+│   │   ├── team_optimizer.py   # Algoritmos genéticos
+│   │   └── battle_analyzer.py  # Análise de resultados
+│   └── 🛠️  utils/              # Funções utilitárias
+│       └── visualization.py    # Visualizações
 ├── 📊 data/                     # Dados do projeto
 ├── 📈 output/                   # Resultados e saídas
-├── ⚙️  config/                  # Configurações
-└── 📚 docs/                     # Documentação consolidada
-    ├── apresentacao/            # Para apresentação
-    ├── case-tecnico/            # Case técnico
-    ├── relatorios/              # Relatórios finais
-    └── ESTRUTURA_PROJETO.md    # Este arquivo
+├── 📚 docs/                     # Documentação consolidada
+│   ├── case-tecnico/            # Case técnico
+│   ├── relatorios/              # Relatórios finais
+│   └── ESTRUTURA_PROJETO.md    # Este arquivo
+├── 🐍 requirements.txt          # Dependências Python
+├── 📖 README.md                 # Documentação principal
+├── 📖 INSTALACAO_PYTHON.md     # Instruções de instalação
+└── 🔧 .gitignore               # Arquivos ignorados pelo Git
 ```
 
 ## 🚀 Como Usar
 
 ### **Execução Completa (Recomendado)**
-```r
-source('main.R')
+```bash
+python3 main.py --mode demo
 ```
 
-### **Execução por Etapas**
-```r
-source('src/core/setup.R')           # Configurar ambiente
-source('src/core/01_data_preparation.R')      # Preparar dados
-source('src/analysis/02_exploratory_analysis.R')  # Análise exploratória
-source('src/models/03_statistical_modeling.R')    # Modelagem
-source('src/models/04_team_optimization.R')       # Otimização
-source('src/core/05_battle_simulation.R')         # Simulação
+### **Execução por Modos**
+```bash
+# Demonstração
+python3 main.py --mode demo
+
+# Simulação de batalhas
+python3 main.py --mode simulate --simulations 50
+
+# Análise de equipe
+python3 main.py --mode analyze --simulations 50
+
+# Otimização com ML
+python3 main.py --mode optimize --generations 20 --population 30
 ```
 
 ## 🔧 Funcionalidades Principais
 
-### **Funções Utilitárias Disponíveis**
-- `load_data_safe()` - Carregamento seguro de dados
-- `save_data_safe()` - Salvamento seguro de dados
-- `save_plot_safe()` - Salvamento seguro de gráficos
-- `calculate_model_metrics()` - Métricas de performance
-- `log_message()` - Sistema de logging
-- `clean_environment()` - Limpeza de ambiente
+### **Classes Principais Disponíveis**
+- `Pokemon` - Classe para Pokémon individuais
+- `PokemonTeam` - Classe para equipes de Pokémon
+- `Move` - Classe para movimentos
+- `MoveSet` - Classe para conjuntos de movimentos
+- `BattleSystem` - Sistema de batalhas GBA
+- `EliteFour` - Membros da Elite Four
+- `TeamOptimizer` - Algoritmos genéticos
+- `BattleAnalyzer` - Análise de resultados
 
-### **Configurações Automáticas**
-- Criação automática de diretórios
-- Verificação de arquivos de dados
-- Configuração de opções do R
-- Verificação de recursos do sistema
+### **Funcionalidades Automáticas**
+- Criação automática de move sets
+- Sistema de batalhas realista GBA
+- Algoritmos genéticos otimizados
+- Análise de performance automática
 
 ## 📊 Benefícios da Estrutura
 
 ### ✅ **Organização**
-- Código separado por funcionalidade
-- Fácil localização de arquivos
-- Estrutura escalável
+- Classes bem definidas e organizadas
+- Fácil localização de funcionalidades
+- Estrutura escalável e modular
 
 ### ✅ **Manutenibilidade**
-- Funções reutilizáveis
-- Configurações centralizadas
-- Tratamento de erros consistente
+- Classes reutilizáveis
+- Sistema orientado a objetos
+- Tratamento de erros robusto
 
 ### ✅ **Execução**
-- Pipeline automatizado
-- Execução por etapas
-- Testes de validação
+- Múltiplos modos de execução
+- Sistema de batalhas realista
+- Algoritmos genéticos otimizados
 
 ## 🧪 Validação
 
 Para validar a estrutura:
-```r
-source('src/utils/test_structure.R')
+```bash
+python3 main.py --mode demo
 ```
 
 ## 📝 Notas Importantes
 
-1. **Ordem de Execução**: Sempre execute `setup.R` antes de outros scripts
-2. **Dependências**: O arquivo `main.R` executa tudo automaticamente
-3. **Personalização**: Modifique `config.R` para ajustar parâmetros
-4. **Testes**: Use `test_structure.R` para validar mudanças
+1. **Ambiente Virtual**: Sempre use `venv` para isolar dependências
+2. **Dependências**: Instale com `pip install -r requirements.txt`
+3. **Execução**: Use `python3 main.py` para executar
+4. **Modos**: Escolha o modo apropriado para sua necessidade
 
 ---
 
