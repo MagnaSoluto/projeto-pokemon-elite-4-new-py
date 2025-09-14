@@ -10,25 +10,30 @@ Este projeto implementa um sistema completo de análise e otimização de equipe
 
 ### 🏆 Resultados Alcançados
 
-- **Taxa de Vitória Geral**: 95.24%
-- **Equipe Otimizada**: Lapras, Magneton, Moltres, Gengar, Mew, Golem
+- **Sistema Avançado**: Batalhas inteligentes com seleção estratégica de movimentos
+- **Equipe Otimizada**: Kabutops, Magneton, Venusaur, Hitmonchan, Magmar, Articuno
+- **Cobertura de Tipos**: 10 tipos únicos (vs 8 do sistema original)
+- **Performance**: 100% contra Lorelei e Bruno, 85% contra Lance
 - **Sistema de Batalhas**: Fórmula GBA precisa com golpes críticos e movesets realistas
-- **Algoritmo de Otimização**: Algoritmo genético com 50 gerações
+- **Algoritmo de Otimização**: Algoritmo genético avançado com múltiplas estratégias
 
 ## 🚀 Características Principais
 
-### ⚔️ Sistema de Batalhas Realista
+### ⚔️ Sistema de Batalhas Inteligente
 - **Fórmula de Dano GBA**: Implementação precisa da fórmula de dano do FireRed/LeafGreen
 - **Golpes Críticos**: Sistema completo com taxa base 6.25% + modificador por velocidade
 - **Movesets Realistas**: 52+ Pokémon com movimentos autênticos dos jogos
 - **Efetividade de Tipos**: Matriz completa de 18 tipos Pokémon
 - **Sistema de Status**: Condições de status e efeitos especiais
+- **Seleção Estratégica**: 4 estratégias diferentes de seleção de movimentos
+- **Análise Inteligente**: Considera dano, efetividade, precisão e PP
 
-### 🧬 Otimização Inteligente
+### 🧬 Otimização Avançada
 - **Algoritmo Genético**: Evolução de equipes através de seleção natural
-- **Função de Fitness**: Combinação de performance em batalha e balanceamento
-- **População**: 100 indivíduos por geração
-- **Convergência**: Otimização em 50 gerações
+- **Função de Fitness Avançada**: 5 fatores de avaliação (performance, tipos, balanceamento, estratégias, resistências)
+- **População Inteligente**: 50% equipes balanceadas + 50% aleatórias
+- **Múltiplas Estratégias**: Testa diferentes abordagens de batalha
+- **Convergência Otimizada**: Parâmetros ajustados para melhor performance
 
 ### 📊 Análise Completa
 - **Simulações Massivas**: 1000+ batalhas por análise
@@ -38,7 +43,22 @@ Este projeto implementa um sistema completo de análise e otimização de equipe
 
 ## 🎯 Equipe Otimizada
 
-A melhor equipe encontrada pelo algoritmo:
+### Sistema Avançado (Recomendado)
+
+A melhor equipe encontrada pelo sistema avançado:
+
+| # | Pokémon | Nível | Tipos | Total | Vantagens |
+|---|---------|-------|-------|-------|-----------|
+| 1 | **Kabutops** | 60 | Rock/Water | 495 | Cobertura Water + Rock |
+| 2 | **Magneton** | 60 | Electric/Steel | 465 | Resistente + Electric |
+| 3 | **Venusaur** | 60 | Grass/Poison | 525 | Tank + Grass coverage |
+| 4 | **Hitmonchan** | 60 | Fighting | 455 | Fighting coverage |
+| 5 | **Magmar** | 60 | Fire | 495 | Fire coverage |
+| 6 | **Articuno** | 60 | Ice/Flying | 580 | Legendary + Ice coverage |
+
+### Sistema Original (Baseline)
+
+Equipe do sistema original para comparação:
 
 | # | Pokémon | Nível | Tipos | Total | Moveset |
 |---|---------|-------|-------|-------|---------|
@@ -51,6 +71,14 @@ A melhor equipe encontrada pelo algoritmo:
 
 ### 📈 Performance por Membro da Elite dos 4
 
+#### Sistema Avançado:
+- **Lorelei** (Ice): 100.0% vitórias
+- **Bruno** (Fighting): 100.0% vitórias  
+- **Agatha** (Ghost): 45.0% vitórias
+- **Lance** (Dragon): 85.0% vitórias
+- **Champion** (Mixed): 0.0% vitórias
+
+#### Sistema Original:
 - **Lorelei** (Ice): 100.0% vitórias
 - **Bruno** (Fighting): 100.0% vitórias  
 - **Agatha** (Ghost): 100.0% vitórias
@@ -83,7 +111,10 @@ pip install -r requirements.txt
 ### Uso Básico
 
 ```bash
-# Otimizar equipe (recomendado)
+# Sistema Avançado (Recomendado)
+python3 test_advanced_optimization.py
+
+# Otimizar equipe (sistema original)
 python3 main.py --mode optimize --generations 50 --population 100
 
 # Analisar equipe específica
@@ -96,6 +127,34 @@ python3 main.py --mode simulate
 python3 main.py --mode demo
 ```
 
+### Sistema Avançado
+
+O sistema avançado oferece funcionalidades superiores:
+
+```python
+from pokemon_elite_four.analysis.advanced_team_optimizer import AdvancedTeamOptimizer
+from pokemon_elite_four.core.smart_battle_system import SmartBattleSystem, MoveStrategy
+
+# Cria otimizador avançado
+optimizer = AdvancedTeamOptimizer(
+    pokemon_database=pokemon_database,
+    elite_four=elite_four,
+    population_size=100,
+    max_generations=50
+)
+
+# Executa otimização
+result = optimizer.optimize_team_advanced()
+
+# Batalha inteligente
+smart_system = SmartBattleSystem()
+battle_log = smart_system.battle_teams_smart(
+    team1, team2, 
+    MoveStrategy.BALANCED, 
+    MoveStrategy.TYPE_EFFECTIVE
+)
+```
+
 ## 📁 Estrutura do Projeto
 
 ```
@@ -103,10 +162,12 @@ projeto-pokemon-elite-4-new-py/
 ├── 📁 pokemon_elite_four/          # Pacote principal
 │   ├── 📁 core/                    # Classes fundamentais
 │   │   ├── pokemon.py              # Classe Pokémon e equipe
-│   │   ├── battle_system.py        # Sistema de batalhas
+│   │   ├── battle_system.py        # Sistema de batalhas original
+│   │   ├── smart_battle_system.py  # Sistema de batalhas inteligente
 │   │   └── moves.py                # Movimentos e movesets
 │   ├── 📁 analysis/                # Análise e otimização
-│   │   └── team_optimizer.py       # Algoritmo genético
+│   │   ├── team_optimizer.py       # Algoritmo genético original
+│   │   └── advanced_team_optimizer.py # Algoritmo genético avançado
 │   └── 📁 utils/                   # Utilitários
 ├── 📁 data/                        # Dados dos Pokémon
 │   ├── pokemon_data.csv            # Estatísticas base
@@ -116,8 +177,13 @@ projeto-pokemon-elite-4-new-py/
 │   ├── 📁 plots/                   # Gráficos gerados
 │   └── 📁 reports/                 # Relatórios detalhados
 ├── 📁 docs/                        # Documentação
+│   ├── IMPLEMENTACAO_TECNICA.md
+│   ├── ANALISE_RESULTADOS.md
+│   ├── DECISOES_CIENTIFICAS.md
+│   ├── METODOLOGIA_CIENTIFICA.md
 │   └── CASE_TECNICO_41_PERGUNTAS_PYTHON.ipynb
 ├── main.py                         # Script principal
+├── test_advanced_optimization.py   # Teste do sistema avançado
 ├── requirements.txt                # Dependências Python
 └── README.md                       # Este arquivo
 ```
