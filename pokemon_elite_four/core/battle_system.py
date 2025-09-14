@@ -352,18 +352,18 @@ class BattleSystem:
             if pokemon1.move_set is not None:
                 pokemon1_moves = [move for move in pokemon1.move_set.moves if move.category != MoveCategory.STATUS]
             else:
-                # Move set padrão se não existir
-                from .moves import create_default_moveset
-                pokemon1.move_set = create_default_moveset(pokemon1.type1)
+                # Move set realista baseado no nome do Pokémon
+                from .moves import create_realistic_moveset
+                pokemon1.move_set = create_realistic_moveset(pokemon1.name)
                 pokemon1_moves = [move for move in pokemon1.move_set.moves if move.category != MoveCategory.STATUS]
         
         if pokemon2_moves is None:
             if pokemon2.move_set is not None:
                 pokemon2_moves = [move for move in pokemon2.move_set.moves if move.category != MoveCategory.STATUS]
             else:
-                # Move set padrão se não existir
-                from .moves import create_default_moveset
-                pokemon2.move_set = create_default_moveset(pokemon2.type1)
+                # Move set realista baseado no nome do Pokémon
+                from .moves import create_realistic_moveset
+                pokemon2.move_set = create_realistic_moveset(pokemon2.name)
                 pokemon2_moves = [move for move in pokemon2.move_set.moves if move.category != MoveCategory.STATUS]
         
         turns = []

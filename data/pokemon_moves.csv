@@ -1,0 +1,101 @@
+move_id,move_name,move_type,category,power,accuracy,pp,priority,description
+1,Tackle,Normal,Physical,40,100,35,0,Um ataque físico básico
+2,Scratch,Normal,Physical,40,100,35,0,Arranha o oponente com garras
+3,Vine Whip,Grass,Physical,45,100,25,0,Usa vinhas para chicotear o oponente
+4,Ember,Fire,Special,40,100,25,0,Atira pequenas chamas no oponente
+5,Water Gun,Water,Special,40,100,25,0,Dispara um jato de água
+6,Thunder Shock,Electric,Special,40,100,30,0,Dispara um choque elétrico fraco
+7,Confusion,Psychic,Special,50,100,25,0,Usa poder psíquico para confundir
+8,Quick Attack,Normal,Physical,40,100,30,1,Ataque rápido que sempre ataca primeiro
+9,Bite,Dark,Physical,60,100,25,0,Morde o oponente com dentes afiados
+10,Metal Claw,Steel,Physical,50,95,35,0,Ataca com garras de metal
+11,Flamethrower,Fire,Special,95,100,15,0,Dispara uma chama intensa
+12,Surf,Water,Special,95,100,15,0,Cria uma onda gigante para atacar
+13,Thunderbolt,Electric,Special,95,100,15,0,Dispara um raio poderoso
+14,Psychic,Psychic,Special,90,100,10,0,Usa poder psíquico devastador
+15,Solar Beam,Grass,Special,120,100,10,0,Concentra energia solar por um turno
+16,Ice Beam,Ice,Special,95,100,10,0,Dispara um raio de gelo congelante
+17,Hyper Beam,Normal,Special,150,90,5,0,Ataque devastador que requer descanso
+18,Earthquake,Ground,Physical,100,100,10,0,Causa um terremoto que afeta todos
+19,Rock Slide,Rock,Physical,75,90,10,0,Arremessa pedras grandes
+20,Dragon Claw,Dragon,Physical,80,100,15,0,Ataca com garras de dragão
+21,Growl,Normal,Status,0,100,40,0,Reduz o ataque do oponente
+22,Leer,Normal,Status,0,100,30,0,Intimida o oponente reduzindo defesa
+23,Swords Dance,Normal,Status,0,100,20,0,Dança ritual que aumenta o ataque
+24,Agility,Psychic,Status,0,100,30,0,Aumenta drasticamente a velocidade
+25,Toxic,Poison,Status,0,90,10,0,Envenena gravemente o oponente
+26,Thunder Wave,Electric,Status,0,100,20,0,Paralisa o oponente com choque
+27,Will-O-Wisp,Fire,Status,0,85,15,0,Queima o oponente com chama fantasmagórica
+28,Reflect,Psychic,Status,0,100,20,0,Cria uma barreira que reduz dano físico
+29,Light Screen,Psychic,Status,0,100,30,0,Cria uma barreira que reduz dano especial
+30,Rest,Psychic,Status,0,100,10,0,Dorme por 2 turnos mas cura completamente
+31,Recover,Normal,Status,0,100,10,0,Recupera metade dos HP máximos
+32,Double Team,Normal,Status,0,100,15,0,Cria ilusões para aumentar evasão
+33,Substitute,Normal,Status,0,100,10,0,Cria um substituto usando 25% dos HP
+34,Focus Energy,Normal,Status,0,100,30,0,Aumenta chance de acerto crítico
+35,Harden,Normal,Status,0,100,30,0,Endurece o corpo aumentando defesa
+36,Minimize,Normal,Status,0,100,10,0,Encolhe para aumentar evasão
+37,Smokescreen,Normal,Status,0,100,20,0,Lança fumaça reduzindo precisão
+38,Flash,Normal,Status,0,100,20,0,Cega o oponente reduzindo precisão
+39,Screech,Normal,Status,0,85,40,0,Grita alto reduzindo defesa do oponente
+40,Sand Attack,Ground,Status,0,100,15,0,Joga areia nos olhos do oponente
+41,Water Pulse,Water,Special,60,100,20,0,Dispara um pulso de água que pode confundir
+42,Bubble Beam,Water,Special,65,100,20,0,Dispara bolhas que podem reduzir velocidade
+43,Aurora Beam,Ice,Special,65,100,20,0,Dispara um raio colorido que pode reduzir ataque
+44,Signal Beam,Bug,Special,75,100,15,0,Dispara um sinal que pode confundir
+45,Sludge Bomb,Poison,Special,90,100,10,0,Arremessa lodo tóxico
+46,Shadow Ball,Ghost,Special,80,100,15,0,Arremessa uma esfera de energia sombria
+47,Ancient Power,Rock,Special,60,100,5,0,Usa poder ancestral que pode aumentar todas as stats
+48,Silver Wind,Bug,Special,60,100,5,0,Dispara vento prateado que pode aumentar todas as stats
+49,Hyper Fang,Normal,Physical,80,90,15,0,Morde com força devastadora
+50,Super Fang,Normal,Physical,0,90,10,0,Corta os HP do oponente pela metade
+51,Crunch,Dark,Physical,80,100,15,0,Morde com força que pode reduzir defesa
+52,Body Slam,Normal,Physical,85,100,15,0,Ataca com o corpo pesado
+53,Take Down,Normal,Physical,90,85,20,0,Ataca com força mas causa dano de recuo
+54,Double-Edge,Normal,Physical,120,100,15,0,Ataca com força total mas causa dano de recuo
+55,Skull Bash,Normal,Physical,130,100,10,0,Carrega por um turno então ataca
+56,Headbutt,Normal,Physical,70,100,15,0,Ataca com a cabeça que pode causar flinch
+57,Stomp,Normal,Physical,65,100,20,0,Pisa no oponente que pode causar flinch
+58,Mega Kick,Normal,Physical,120,75,5,0,Chuta com força devastadora
+59,Mega Punch,Normal,Physical,80,85,20,0,Soca com força devastadora
+60,Comet Punch,Normal,Physical,18,85,15,0,Soca 2-5 vezes consecutivas
+61,Fire Punch,Fire,Physical,75,100,15,0,Soca com punho em chamas
+62,Ice Punch,Ice,Physical,75,100,15,0,Soca com punho congelado
+63,Thunder Punch,Electric,Physical,75,100,15,0,Soca com punho elétrico
+64,Seismic Toss,Fighting,Physical,0,100,20,0,Usa força de luta para causar dano igual ao nível
+65,Hi Jump Kick,Fighting,Physical,130,90,10,0,Pula alto e chuta com força
+66,Jump Kick,Fighting,Physical,100,95,10,0,Pula e chuta com força
+67,Low Kick,Fighting,Physical,0,100,20,0,Chuta baixo causando mais dano em Pokémon pesados
+68,Cross Chop,Fighting,Physical,100,80,5,0,Chop cruzado com alta chance de crítico
+69,Karate Chop,Fighting,Physical,50,100,25,0,Chop de karatê com alta chance de crítico
+70,Submission,Fighting,Physical,80,80,20,0,Ataca com força mas causa dano de recuo
+71,Revenge,Fighting,Physical,60,100,10,0,Causa mais dano se foi atingido no mesmo turno
+72,Focus Punch,Fighting,Physical,150,100,20,0,Concentra poder por um turno então ataca
+73,Dig,Ground,Physical,80,100,10,0,Cava no primeiro turno e ataca no segundo
+74,Earth Power,Ground,Special,90,100,10,0,Libera poder da terra que pode reduzir defesa especial
+75,Magnitude,Ground,Physical,0,100,30,0,Causa terremoto com poder variável
+76,Bone Club,Ground,Physical,65,85,20,0,Ataca com osso que pode causar flinch
+77,Bonemerang,Ground,Physical,50,90,10,0,Arremessa osso que retorna
+78,Drill Run,Ground,Physical,80,95,10,0,Perfura o oponente com alta chance de crítico
+79,Spike Cannon,Normal,Physical,20,100,15,0,Dispara espinhos 2-5 vezes consecutivas
+80,Poison Sting,Poison,Physical,15,100,35,0,Ataca com ferrão venenoso
+81,Poison Jab,Poison,Physical,80,100,20,0,Ataca com ferrão venenoso poderoso
+82,Sludge,Poison,Special,65,100,20,0,Arremessa lodo tóxico
+83,Acid,Poison,Special,40,100,30,0,Spray ácido que pode reduzir defesa especial
+84,Acid Armor,Poison,Status,0,100,20,0,Endurece o corpo aumentando defesa
+85,Poison Gas,Poison,Status,0,90,40,0,Envenena o oponente com gás tóxico
+86,Smog,Poison,Special,30,70,20,0,Ataca com gás tóxico que pode envenenar
+87,Clear Smog,Poison,Special,50,100,15,0,Ataca com gás que remove mudanças de stats
+88,Sludge Wave,Poison,Special,95,100,10,0,Arremessa onda de lodo tóxico
+89,Venom Drench,Poison,Status,0,100,20,0,Reduz ataque ataque especial e velocidade de Pokémon envenenados
+90,Coil,Poison,Status,0,100,20,0,Enrola-se aumentando ataque defesa e precisão
+91,Poison Tail,Poison,Physical,50,100,25,0,Ataca com cauda venenosa com alta chance de crítico
+92,Cross Poison,Poison,Physical,70,100,20,0,Corte cruzado venenoso com alta chance de crítico
+93,Gunk Shot,Poison,Physical,120,80,5,0,Arremessa lixo tóxico
+94,Poison Fang,Poison,Physical,50,100,15,0,Morde com dentes venenosos
+95,Poison Powder,Poison,Status,0,75,35,0,Envenena o oponente com pó venenoso
+96,Stun Spore,Grass,Status,0,75,30,0,Paralisa o oponente com esporos
+97,Sleep Powder,Grass,Status,0,75,15,0,Adormece o oponente com esporos
+98,Spore,Grass,Status,0,100,15,0,Adormece o oponente com esporos
+99,Leech Seed,Grass,Status,0,90,10,0,Planta semente que drena HP do oponente
+100,Razor Leaf,Grass,Physical,55,95,25,0,Corta com folhas afiadas com alta chance de crítico

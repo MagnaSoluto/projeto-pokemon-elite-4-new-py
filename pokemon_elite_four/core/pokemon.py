@@ -74,7 +74,9 @@ class Pokemon:
         self.level = level
         self.current_hp = self.max_hp
         self.status_conditions = []
-        self.move_set = None  # Será inicializado depois
+        self.move_set = None
+        # Carrega moveset realista se disponível
+        self._load_realistic_moveset()  # Será inicializado depois
         
     @property
     def max_hp(self) -> int:
@@ -110,6 +112,16 @@ class Pokemon:
     def is_fainted(self) -> bool:
         """Verifica se o Pokémon está desmaiado"""
         return self.current_hp <= 0
+    
+    def _load_realistic_moveset(self):
+        """Carrega moveset realista baseado no nome do Pokémon"""
+        try:
+            from .moves import create_realistic_moveset
+            self.move_set = create_realistic_moveset(self.name)
+        except Exception as e:
+            # Fallback para moveset genérico se houver erro
+            from .moves import create_default_moveset
+            self.move_set = create_default_moveset(self.type1)
     
     def take_damage(self, damage: int) -> None:
         """Aplica dano ao Pokémon"""

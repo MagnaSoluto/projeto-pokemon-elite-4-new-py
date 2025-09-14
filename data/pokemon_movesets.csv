@@ -1,0 +1,152 @@
+pokemon_id,pokemon_name,move1,move2,move3,move4,level_learned
+1,Bulbasaur,Tackle,Growl,Vine Whip,Leech Seed,5
+2,Ivysaur,Tackle,Growl,Vine Whip,Razor Leaf,16
+3,Venusaur,Tackle,Growl,Vine Whip,Solar Beam,32
+4,Charmander,Scratch,Growl,Ember,Smokescreen,5
+5,Charmeleon,Scratch,Growl,Flamethrower,Smokescreen,16
+6,Charizard,Scratch,Growl,Flamethrower,Wing Attack,36
+7,Squirtle,Tackle,Tail Whip,Water Gun,Withdraw,5
+8,Wartortle,Tackle,Tail Whip,Water Gun,Bite,16
+9,Blastoise,Tackle,Tail Whip,Surf,Skull Bash,36
+10,Caterpie,Tackle,String Shot,,,,5
+11,Metapod,Harden,,,,,7
+12,Butterfree,Confusion,Poison Powder,Stun Spore,Sleep Powder,10
+13,Weedle,Poison Sting,String Shot,,,,5
+14,Kakuna,Harden,,,,,7
+15,Beedrill,Poison Sting,String Shot,Fury Attack,Focus Energy,10
+16,Pidgey,Tackle,Sand Attack,Gust,Quick Attack,5
+17,Pidgeotto,Tackle,Sand Attack,Gust,Wing Attack,9
+18,Pidgeot,Tackle,Sand Attack,Gust,Wing Attack,15
+19,Rattata,Tackle,Tail Whip,Quick Attack,Hyper Fang,5
+20,Raticate,Tackle,Tail Whip,Quick Attack,Hyper Fang,7
+21,Spearow,Peck,Growl,Leer,Fury Attack,5
+22,Fearow,Peck,Growl,Leer,Fury Attack,9
+23,Ekans,Wrap,Leer,Poison Sting,Bite,5
+24,Arbok,Wrap,Leer,Poison Sting,Crunch,9
+25,Pikachu,Thunder Shock,Growl,Quick Attack,Thunderbolt,5
+26,Raichu,Thunder Shock,Growl,Quick Attack,Thunderbolt,5
+27,Sandshrew,Scratch,Sand Attack,Slash,Earthquake,5
+28,Sandslash,Scratch,Sand Attack,Slash,Earthquake,9
+29,Nidoran F,Scratch,Growl,Tackle,Poison Sting,5
+30,Nidorina,Scratch,Growl,Tackle,Poison Sting,8
+31,Nidoqueen,Scratch,Growl,Tackle,Earthquake,8
+32,Nidoran M,Leer,Peck,Focus Energy,Double Kick,5
+33,Nidorino,Leer,Peck,Focus Energy,Double Kick,8
+34,Nidoking,Leer,Peck,Focus Energy,Earthquake,8
+35,Clefairy,Pound,Growl,Sing,Double Slap,5
+36,Clefable,Pound,Growl,Sing,Double Slap,5
+37,Vulpix,Ember,Tail Whip,Quick Attack,Confuse Ray,5
+38,Ninetales,Ember,Tail Whip,Quick Attack,Confuse Ray,5
+39,Jigglypuff,Sing,Defense Curl,Pound,Double Slap,5
+40,Wigglytuff,Sing,Defense Curl,Pound,Double Slap,5
+41,Zubat,Leech Life,Supersonic,Astonish,Bite,5
+42,Golbat,Leech Life,Supersonic,Astonish,Bite,8
+43,Oddish,Absorb,Sweet Scent,Poison Powder,Stun Spore,5
+44,Gloom,Absorb,Sweet Scent,Poison Powder,Stun Spore,8
+45,Vileplume,Absorb,Sweet Scent,Poison Powder,Solar Beam,8
+46,Paras,Scratch,Stun Spore,Poison Powder,Leech Life,5
+47,Parasect,Scratch,Stun Spore,Poison Powder,Leech Life,8
+48,Venonat,Tackle,Disable,Supersonic,Confusion,5
+49,Venomoth,Tackle,Disable,Supersonic,Psychic,8
+50,Diglett,Scratch,Sand Attack,Dig,Earthquake,5
+51,Dugtrio,Scratch,Sand Attack,Dig,Earthquake,8
+52,Meowth,Scratch,Growl,Bite,Pay Day,5
+53,Persian,Scratch,Growl,Bite,Pay Day,5
+54,Psyduck,Scratch,Tail Whip,Water Gun,Confusion,5
+55,Golduck,Scratch,Tail Whip,Water Gun,Psychic,8
+56,Mankey,Scratch,Leer,Low Kick,Karate Chop,5
+57,Primeape,Scratch,Leer,Low Kick,Cross Chop,8
+58,Growlithe,Bite,Roar,Ember,Leer,5
+59,Arcanine,Bite,Roar,Flamethrower,Leer,5
+60,Poliwag,Bubble,Hypnosis,Water Gun,Double Slap,5
+61,Poliwhirl,Bubble,Hypnosis,Water Gun,Double Slap,8
+62,Poliwrath,Bubble,Hypnosis,Surf,Submission,8
+63,Abra,Teleport,,,,,5
+64,Kadabra,Teleport,Confusion,Disable,Psybeam,16
+65,Alakazam,Teleport,Confusion,Disable,Psychic,16
+66,Machop,Low Kick,Leer,Focus Energy,Karate Chop,5
+67,Machoke,Low Kick,Leer,Focus Energy,Karate Chop,8
+68,Machamp,Low Kick,Leer,Focus Energy,Cross Chop,8
+69,Bellsprout,Vine Whip,Growth,Wrap,Sleep Powder,5
+70,Weepinbell,Vine Whip,Growth,Wrap,Sleep Powder,8
+71,Victreebel,Vine Whip,Growth,Wrap,Solar Beam,8
+72,Tentacool,Poison Sting,Water Gun,Constrict,Acid,5
+73,Tentacruel,Poison Sting,Water Gun,Constrict,Sludge Bomb,8
+74,Geodude,Tackle,Defense Curl,Rock Throw,Earthquake,5
+75,Graveler,Tackle,Defense Curl,Rock Throw,Earthquake,8
+76,Golem,Tackle,Defense Curl,Rock Throw,Earthquake,8
+77,Ponyta,Tackle,Growl,Ember,Stomp,5
+78,Rapidash,Tackle,Growl,Flamethrower,Stomp,8
+79,Slowpoke,Tackle,Growl,Water Gun,Confusion,5
+80,Slowbro,Tackle,Growl,Surf,Psychic,8
+81,Magnemite,Tackle,Thunder Shock,Supersonic,Thunderbolt,5
+82,Magneton,Tackle,Thunder Shock,Supersonic,Thunderbolt,8
+83,Farfetch'd,Peck,Sand Attack,Leer,Fury Attack,5
+84,Doduo,Peck,Growl,Leer,Fury Attack,5
+85,Dodrio,Peck,Growl,Leer,Fury Attack,8
+86,Seel,Headbutt,Growl,Water Gun,Ice Beam,5
+87,Dewgong,Headbutt,Growl,Surf,Ice Beam,8
+88,Grimer,Poison Gas,Pound,Disable,Sludge,5
+89,Muk,Poison Gas,Pound,Disable,Sludge Bomb,8
+90,Shellder,Tackle,Withdraw,Supersonic,Icicle Spear,5
+91,Cloyster,Tackle,Withdraw,Supersonic,Icicle Spear,8
+92,Gastly,Lick,Hypnosis,Confuse Ray,Night Shade,5
+93,Haunter,Lick,Hypnosis,Confuse Ray,Shadow Ball,8
+94,Gengar,Lick,Hypnosis,Confuse Ray,Shadow Ball,8
+95,Onix,Tackle,Screech,Bind,Rock Throw,5
+96,Drowzee,Hypnosis,Pound,Disable,Confusion,5
+97,Hypno,Hypnosis,Pound,Disable,Psychic,8
+98,Krabby,Bubble,Leer,Vice Grip,Guillotine,5
+99,Kingler,Bubble,Leer,Vice Grip,Guillotine,8
+100,Voltorb,Tackle,Screech,Sonic Boom,Thunderbolt,5
+101,Electrode,Tackle,Screech,Sonic Boom,Thunderbolt,8
+102,Exeggcute,Barrage,Hypnosis,Confusion,Psychic,5
+103,Exeggutor,Barrage,Hypnosis,Confusion,Psychic,8
+104,Cubone,Bone Club,Growl,Leer,Headbutt,5
+105,Marowak,Bone Club,Growl,Leer,Headbutt,8
+106,Hitmonlee,Double Kick,Meditate,Rolling Kick,Jump Kick,5
+107,Hitmonchan,Comet Punch,Agility,Mega Punch,Thunder Punch,5
+108,Lickitung,Lick,Supersonic,Defense Curl,Stomp,5
+109,Koffing,Poison Gas,Tackle,Smog,Sludge,5
+110,Weezing,Poison Gas,Tackle,Smog,Sludge Bomb,8
+111,Rhyhorn,Horn Attack,Leer,Tail Whip,Stomp,5
+112,Rhydon,Horn Attack,Leer,Tail Whip,Earthquake,8
+113,Chansey,Pound,Growl,Tail Whip,Double Slap,5
+114,Tangela,Constrict,Bind,Ingrain,Power Whip,5
+115,Kangaskhan,Comet Punch,Leer,Bite,Tail Whip,5
+116,Horsea,Bubble,Smokescreen,Leer,Water Gun,5
+117,Seadra,Bubble,Smokescreen,Leer,Water Gun,8
+118,Goldeen,Peck,Tail Whip,Water Sport,Water Pulse,5
+119,Seaking,Peck,Tail Whip,Water Sport,Water Pulse,8
+120,Staryu,Tackle,Harden,Water Gun,Rapid Spin,5
+121,Starmie,Tackle,Harden,Water Gun,Psychic,8
+122,Mr. Mime,Barrier,Confusion,Light Screen,Psychic,5
+123,Scyther,Quick Attack,Leer,Fury Cutter,False Swipe,5
+124,Jynx,Lick,Pound,Lovely Kiss,Psychic,5
+125,Electabuzz,Quick Attack,Leer,Thunder Shock,Thunderbolt,5
+126,Magmar,Ember,Leer,Smokescreen,Flamethrower,5
+127,Pinsir,Vice Grip,Focus Energy,Bind,Seismic Toss,5
+128,Tauros,Tackle,Stomp,Tail Whip,Rage,5
+129,Magikarp,Splash,,,,,5
+130,Gyarados,Bite,Leer,Water Pulse,Hyper Beam,20
+131,Lapras,Water Gun,Growl,Sing,Ice Beam,5
+132,Ditto,Transform,,,,,5
+133,Eevee,Tackle,Tail Whip,Quick Attack,Bite,5
+134,Vaporeon,Tackle,Tail Whip,Quick Attack,Surf,5
+135,Jolteon,Tackle,Tail Whip,Quick Attack,Thunderbolt,5
+136,Flareon,Tackle,Tail Whip,Quick Attack,Flamethrower,5
+137,Porygon,Conversion 2,Tackle,Sharpen,Psybeam,5
+138,Omanyte,Constrict,Withdraw,Bite,Water Gun,5
+139,Omastar,Constrict,Withdraw,Bite,Surf,8
+140,Kabuto,Scratch,Harden,Absorb,Water Gun,5
+141,Kabutops,Scratch,Harden,Absorb,Surf,8
+142,Aerodactyl,Wing Attack,Supersonic,Bite,Ancient Power,5
+143,Snorlax,Tackle,Defense Curl,Amnesia,Lick,5
+144,Articuno,Gust,Mist,Agility,Ice Beam,5
+145,Zapdos,Thunder Shock,Detect,Agility,Thunderbolt,5
+146,Moltres,Wing Attack,Ember,Agility,Flamethrower,5
+147,Dratini,Wrap,Leer,Thunder Wave,Dragon Rage,5
+148,Dragonair,Wrap,Leer,Thunder Wave,Dragon Rage,8
+149,Dragonite,Wrap,Leer,Thunder Wave,Hyper Beam,8
+150,Mewtwo,Confusion,Disable,Psychic,Recover,5
+151,Mew,Pound,Transform,Psychic,Recover,5

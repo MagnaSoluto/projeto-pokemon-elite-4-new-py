@@ -1,0 +1,41 @@
+move_id,move_name,move_type,category,power,accuracy,pp,priority,description
+1,Tackle,Normal,Physical,40,100,35,0,Basic physical attack
+2,Scratch,Normal,Physical,40,100,35,0,Scratches opponent with claws
+3,Vine Whip,Grass,Physical,45,100,25,0,Uses vines to whip opponent
+4,Ember,Fire,Special,40,100,25,0,Shoots small flames at opponent
+5,Water Gun,Water,Special,40,100,25,0,Fires water jet
+6,Thunder Shock,Electric,Special,40,100,30,0,Fires weak electric shock
+7,Confusion,Psychic,Special,50,100,25,0,Uses psychic power to confuse
+8,Quick Attack,Normal,Physical,40,100,30,1,Quick attack that always goes first
+9,Bite,Dark,Physical,60,100,25,0,Bites opponent with sharp teeth
+10,Metal Claw,Steel,Physical,50,95,35,0,Attacks with metal claws
+11,Flamethrower,Fire,Special,95,100,15,0,Fires intense flame
+12,Surf,Water,Special,95,100,15,0,Creates giant wave to attack
+13,Thunderbolt,Electric,Special,95,100,15,0,Fires powerful lightning
+14,Psychic,Psychic,Special,90,100,10,0,Uses devastating psychic power
+15,Solar Beam,Grass,Special,120,100,10,0,Charges solar energy for one turn
+16,Ice Beam,Ice,Special,95,100,10,0,Fires freezing ice ray
+17,Hyper Beam,Normal,Special,150,90,5,0,Devastating attack that requires rest
+18,Earthquake,Ground,Physical,100,100,10,0,Causes earthquake affecting all
+19,Rock Slide,Rock,Physical,75,90,10,0,Throws large rocks
+20,Dragon Claw,Dragon,Physical,80,100,15,0,Attacks with dragon claws
+21,Growl,Normal,Status,0,100,40,0,Reduces opponent attack
+22,Leer,Normal,Status,0,100,30,0,Intimidates opponent reducing defense
+23,Swords Dance,Normal,Status,0,100,20,0,Ritual dance that increases attack
+24,Agility,Psychic,Status,0,100,30,0,Dramatically increases speed
+25,Toxic,Poison,Status,0,90,10,0,Severely poisons opponent
+26,Thunder Wave,Electric,Status,0,100,20,0,Paralyzes opponent with shock
+27,Will-O-Wisp,Fire,Status,0,85,15,0,Burns opponent with ghostly flame
+28,Reflect,Psychic,Status,0,100,20,0,Creates barrier that reduces physical damage
+29,Light Screen,Psychic,Status,0,100,30,0,Creates barrier that reduces special damage
+30,Rest,Psychic,Status,0,100,10,0,Sleeps for 2 turns but heals completely
+31,Recover,Normal,Status,0,100,10,0,Recovers half of max HP
+32,Double Team,Normal,Status,0,100,15,0,Creates illusions to increase evasion
+33,Substitute,Normal,Status,0,100,10,0,Creates substitute using 25% of HP
+34,Focus Energy,Normal,Status,0,100,30,0,Increases critical hit chance
+35,Harden,Normal,Status,0,100,30,0,Hardens body increasing defense
+36,Minimize,Normal,Status,0,100,10,0,Shrinks to increase evasion
+37,Smokescreen,Normal,Status,0,100,20,0,Throws smoke reducing accuracy
+38,Flash,Normal,Status,0,100,20,0,Blinds opponent reducing accuracy
+39,Screech,Normal,Status,0,85,40,0,Screeches loudly reducing opponent defense
+40,Sand Attack,Ground,Status,0,100,15,0,Throws sand in opponent eyes

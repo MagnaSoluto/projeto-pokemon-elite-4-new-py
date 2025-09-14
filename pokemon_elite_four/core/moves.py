@@ -127,6 +127,41 @@ COMMON_MOVES = {
     "Thunder Wave": Move("Thunder Wave", PokemonType.ELECTRIC, MoveCategory.STATUS, 0, 100, 20, target=MoveTarget.ENEMY),
     "Sleep Powder": Move("Sleep Powder", PokemonType.GRASS, MoveCategory.STATUS, 0, 75, 15, target=MoveTarget.ENEMY),
     "Stun Spore": Move("Stun Spore", PokemonType.GRASS, MoveCategory.STATUS, 0, 75, 30, target=MoveTarget.ENEMY),
+    
+    # Movimentos adicionais para movesets realistas
+    "Wing Attack": Move("Wing Attack", PokemonType.FLYING, MoveCategory.PHYSICAL, 60, 100, 35),
+    "Body Slam": Move("Body Slam", PokemonType.NORMAL, MoveCategory.PHYSICAL, 85, 100, 15),
+    "Waterfall": Move("Waterfall", PokemonType.WATER, MoveCategory.PHYSICAL, 80, 100, 15),
+    "Megahorn": Move("Megahorn", PokemonType.BUG, MoveCategory.PHYSICAL, 120, 85, 10),
+    "Explosion": Move("Explosion", PokemonType.NORMAL, MoveCategory.PHYSICAL, 250, 100, 5),
+    "Iron Tail": Move("Iron Tail", PokemonType.STEEL, MoveCategory.PHYSICAL, 100, 75, 15),
+    "Sandstorm": Move("Sandstorm", PokemonType.ROCK, MoveCategory.STATUS, 0, 100, 10, target=MoveTarget.EVERYONE),
+    "Bulk Up": Move("Bulk Up", PokemonType.FIGHTING, MoveCategory.STATUS, 0, 100, 20, target=MoveTarget.SELF),
+    "Soft-Boiled": Move("Soft-Boiled", PokemonType.NORMAL, MoveCategory.STATUS, 0, 100, 10, target=MoveTarget.SELF),
+    "Seismic Toss": Move("Seismic Toss", PokemonType.FIGHTING, MoveCategory.PHYSICAL, 0, 100, 20),
+    "Wish": Move("Wish", PokemonType.NORMAL, MoveCategory.STATUS, 0, 100, 10, target=MoveTarget.SELF),
+    "Tri Attack": Move("Tri Attack", PokemonType.NORMAL, MoveCategory.SPECIAL, 80, 100, 10),
+    "Shell Smash": Move("Shell Smash", PokemonType.NORMAL, MoveCategory.STATUS, 0, 100, 15, target=MoveTarget.SELF),
+    "Aqua Jet": Move("Aqua Jet", PokemonType.WATER, MoveCategory.PHYSICAL, 40, 100, 20, priority=1),
+    "Blizzard": Move("Blizzard", PokemonType.ICE, MoveCategory.SPECIAL, 110, 70, 5),
+    "Roost": Move("Roost", PokemonType.FLYING, MoveCategory.STATUS, 0, 100, 10, target=MoveTarget.SELF),
+    "Fire Blast": Move("Fire Blast", PokemonType.FIRE, MoveCategory.SPECIAL, 110, 85, 5),
+    "Thunder": Move("Thunder", PokemonType.ELECTRIC, MoveCategory.SPECIAL, 110, 70, 10),
+    "Dragon Pulse": Move("Dragon Pulse", PokemonType.DRAGON, MoveCategory.SPECIAL, 85, 100, 10),
+    "Dragon Dance": Move("Dragon Dance", PokemonType.DRAGON, MoveCategory.STATUS, 0, 100, 20, target=MoveTarget.SELF),
+    "Extreme Speed": Move("Extreme Speed", PokemonType.NORMAL, MoveCategory.PHYSICAL, 80, 100, 5, priority=2),
+    "Aura Sphere": Move("Aura Sphere", PokemonType.FIGHTING, MoveCategory.SPECIAL, 80, 100, 20),
+    "Calm Mind": Move("Calm Mind", PokemonType.PSYCHIC, MoveCategory.STATUS, 0, 100, 20, target=MoveTarget.SELF),
+    "Lovely Kiss": Move("Lovely Kiss", PokemonType.NORMAL, MoveCategory.STATUS, 0, 75, 10, target=MoveTarget.ENEMY),
+    "Ice Punch": Move("Ice Punch", PokemonType.ICE, MoveCategory.PHYSICAL, 75, 100, 15),
+    "Thunder Punch": Move("Thunder Punch", PokemonType.ELECTRIC, MoveCategory.PHYSICAL, 75, 100, 15),
+    "X-Scissor": Move("X-Scissor", PokemonType.BUG, MoveCategory.PHYSICAL, 80, 100, 15),
+    "Flail": Move("Flail", PokemonType.NORMAL, MoveCategory.PHYSICAL, 0, 100, 15),
+    "Bounce": Move("Bounce", PokemonType.FLYING, MoveCategory.PHYSICAL, 85, 85, 5),
+    "Transform": Move("Transform", PokemonType.NORMAL, MoveCategory.STATUS, 0, 100, 10, target=MoveTarget.ENEMY),
+    "Acid Armor": Move("Acid Armor", PokemonType.POISON, MoveCategory.STATUS, 0, 100, 20, target=MoveTarget.SELF),
+    "Aqua Tail": Move("Aqua Tail", PokemonType.WATER, MoveCategory.PHYSICAL, 90, 90, 10),
+    "Ice Fang": Move("Ice Fang", PokemonType.ICE, MoveCategory.PHYSICAL, 65, 95, 15),
 }
 
 
@@ -189,3 +224,92 @@ def create_default_moveset(pokemon_type: PokemonType) -> MoveSet:
                 break
     
     return MoveSet(moves[:4])
+
+
+def load_pokemon_movesets() -> dict:
+    """Carrega movesets reais dos Pokémon baseado em dados hardcoded"""
+    movesets = {}
+    
+    # Movesets específicos para Pokémon populares
+    pokemon_movesets = {
+        "Charizard": ["Flamethrower", "Wing Attack", "Dragon Claw", "Earthquake"],
+        "Blastoise": ["Surf", "Ice Beam", "Earthquake", "Bite"],
+        "Venusaur": ["Solar Beam", "Vine Whip", "Earthquake", "Sleep Powder"],
+        "Pikachu": ["Thunderbolt", "Quick Attack", "Thunder Wave", "Bite"],
+        "Alakazam": ["Psychic", "Confusion", "Recover", "Reflect"],
+        "Dragonite": ["Hyper Beam", "Dragon Claw", "Thunderbolt", "Ice Beam"],
+        "Snorlax": ["Body Slam", "Earthquake", "Rest", "Hyper Beam"],
+        "Gengar": ["Shadow Ball", "Psychic", "Thunderbolt", "Toxic"],
+        "Machamp": ["Cross Chop", "Earthquake", "Rock Slide", "Bulk Up"],
+        "Lapras": ["Surf", "Ice Beam", "Thunderbolt", "Psychic"],
+        "Gyarados": ["Waterfall", "Earthquake", "Dragon Dance", "Ice Fang"],
+        "Exeggutor": ["Solar Beam", "Psychic", "Earthquake", "Sleep Powder"],
+        "Rhydon": ["Earthquake", "Rock Slide", "Megahorn", "Swords Dance"],
+        "Golem": ["Earthquake", "Rock Slide", "Explosion", "Swords Dance"],
+        "Onix": ["Earthquake", "Rock Slide", "Iron Tail", "Sandstorm"],
+        "Hitmonlee": ["Hi Jump Kick", "Earthquake", "Rock Slide", "Bulk Up"],
+        "Hitmonchan": ["Mega Punch", "Earthquake", "Rock Slide", "Bulk Up"],
+        "Lickitung": ["Body Slam", "Earthquake", "Swords Dance", "Rest"],
+        "Weezing": ["Sludge Bomb", "Flamethrower", "Thunderbolt", "Explosion"],
+        "Rhyhorn": ["Earthquake", "Rock Slide", "Megahorn", "Swords Dance"],
+        "Chansey": ["Soft-Boiled", "Seismic Toss", "Thunder Wave", "Toxic"],
+        "Tangela": ["Solar Beam", "Sleep Powder", "Earthquake", "Swords Dance"],
+        "Kangaskhan": ["Body Slam", "Earthquake", "Rock Slide", "Swords Dance"],
+        "Horsea": ["Surf", "Ice Beam", "Dragon Pulse", "Agility"],
+        "Goldeen": ["Waterfall", "Megahorn", "Swords Dance", "Aqua Tail"],
+        "Staryu": ["Surf", "Thunderbolt", "Ice Beam", "Recover"],
+        "Mr. Mime": ["Psychic", "Thunderbolt", "Reflect", "Light Screen"],
+        "Scyther": ["Wing Attack", "Swords Dance", "Quick Attack", "Agility"],
+        "Jynx": ["Psychic", "Ice Beam", "Lovely Kiss", "Calm Mind"],
+        "Electabuzz": ["Thunderbolt", "Psychic", "Ice Punch", "Thunder Wave"],
+        "Magmar": ["Flamethrower", "Psychic", "Thunder Punch", "Will-O-Wisp"],
+        "Pinsir": ["X-Scissor", "Earthquake", "Swords Dance", "Quick Attack"],
+        "Tauros": ["Body Slam", "Earthquake", "Rock Slide", "Swords Dance"],
+        "Magikarp": ["Splash", "Tackle", "Flail", "Bounce"],
+        "Lapras": ["Surf", "Ice Beam", "Thunderbolt", "Psychic"],
+        "Ditto": ["Transform", "Transform", "Transform", "Transform"],
+        "Eevee": ["Quick Attack", "Tackle", "Bite", "Growl"],
+        "Vaporeon": ["Surf", "Ice Beam", "Acid Armor", "Wish"],
+        "Jolteon": ["Thunderbolt", "Thunder Wave", "Quick Attack", "Agility"],
+        "Flareon": ["Flamethrower", "Quick Attack", "Will-O-Wisp", "Wish"],
+        "Porygon": ["Tri Attack", "Thunderbolt", "Ice Beam", "Recover"],
+        "Omanyte": ["Surf", "Ice Beam", "Ancient Power", "Shell Smash"],
+        "Omastar": ["Surf", "Ice Beam", "Ancient Power", "Shell Smash"],
+        "Kabuto": ["Waterfall", "Rock Slide", "Swords Dance", "Aqua Jet"],
+        "Kabutops": ["Waterfall", "Rock Slide", "Swords Dance", "Aqua Jet"],
+        "Aerodactyl": ["Wing Attack", "Rock Slide", "Earthquake", "Swords Dance"],
+        "Snorlax": ["Body Slam", "Earthquake", "Rest", "Hyper Beam"],
+        "Articuno": ["Ice Beam", "Blizzard", "Roost", "Reflect"],
+        "Zapdos": ["Thunderbolt", "Thunder", "Roost", "Light Screen"],
+        "Moltres": ["Flamethrower", "Fire Blast", "Roost", "Will-O-Wisp"],
+        "Dratini": ["Dragon Pulse", "Thunder Wave", "Dragon Dance", "Extreme Speed"],
+        "Dragonair": ["Dragon Pulse", "Thunder Wave", "Dragon Dance", "Extreme Speed"],
+        "Dragonite": ["Dragon Pulse", "Thunder Wave", "Dragon Dance", "Extreme Speed"],
+        "Mewtwo": ["Psychic", "Aura Sphere", "Recover", "Calm Mind"],
+        "Mew": ["Psychic", "Aura Sphere", "Soft-Boiled", "Calm Mind"]
+    }
+    
+    # Cria movesets usando movimentos já definidos
+    for pokemon_name, move_names in pokemon_movesets.items():
+        moves = []
+        for move_name in move_names:
+            move = get_move_by_name(move_name)
+            if move:
+                moves.append(move)
+        
+        if moves:
+            movesets[pokemon_name] = MoveSet(moves)
+    
+    return movesets
+
+
+def create_realistic_moveset(pokemon_name: str) -> MoveSet:
+    """Cria moveset realista baseado no nome do Pokémon"""
+    movesets = load_pokemon_movesets()
+    
+    if pokemon_name in movesets:
+        return movesets[pokemon_name]
+    else:
+        # Fallback para tipo genérico se não encontrar
+        from .pokemon import PokemonType
+        return create_default_moveset(PokemonType.NORMAL)
