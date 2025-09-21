@@ -5,6 +5,45 @@ Todas as mudanças notáveis neste projeto serão documentadas neste arquivo.
 O formato é baseado em [Keep a Changelog](https://keepachangelog.com/pt-BR/1.0.0/),
 e este projeto adere ao [Versionamento Semântico](https://semver.org/lang/pt-BR/).
 
+## [2.0.0] - 2025-09-20
+
+### 🐍 Migração Completa para Python
+- **Projeto 100% migrado** de R para Python
+- **Sistema de batalhas GBA** implementado com precisão
+- **Algoritmo genético avançado** para otimização de equipes
+- **151 Pokémon** carregados e processados
+- **5 membros da Elite Four** implementados
+
+### 🏆 Nova Equipe Otimizada
+- **Raichu** (Electric) - Velocidade + Electric coverage
+- **Moltres** (Fire/Flying) - Legendary + Fire/Flying
+- **Starmie** (Water/Psychic) - Water + Psychic coverage
+- **Venomoth** (Bug/Poison) - Bug + Poison coverage
+- **Aerodactyl** (Rock/Flying) - Velocidade + Rock coverage
+- **Dewgong** (Water/Ice) - Water + Ice coverage
+
+### 📊 Resultados de Performance
+- **Score de Fitness**: 0.9350 (93.5%)
+- **Taxa de Vitória Geral**: 86.0% (média ponderada)
+- **Lorelei**: 100.0% vitórias
+- **Bruno**: 100.0% vitórias
+- **Agatha**: 98.0% vitórias
+- **Lance**: 78.0% vitórias
+- **Champion**: 54.0% vitórias
+
+### ⚔️ Sistema de Batalhas Avançado
+- **Fórmula GBA precisa** implementada
+- **Golpes críticos** com taxa base 6.25%
+- **Movesets realistas** para 52+ Pokémon
+- **Efetividade de tipos** completa (18x18)
+- **Seleção estratégica** de movimentos
+
+### 🧬 Algoritmo Genético
+- **20 gerações** de otimização
+- **População de 20** indivíduos
+- **Convergência** na geração 20
+- **Tempo de execução**: ~3 segundos
+
 ## [1.1.0] - 2024-12-26
 
 ### 🧹 Limpeza e Organização
@@ -111,26 +150,36 @@ e este projeto adere ao [Versionamento Semântico](https://semver.org/lang/pt-BR
 ## 🎮 Status Atual do Projeto
 
 ### ✅ **Funcionalidades Concluídas:**
-- **Análise Exploratória**: 15 visualizações geradas
-- **Modelagem Estatística**: 4 modelos treinados e comparados
-- **Otimização do Quinteto**: Algoritmo genético executado com sucesso
-- **Simulação de Batalhas**: 125 batalhas simuladas
-- **Case Técnico**: 41 perguntas respondidas com sucesso
-- **Documentação**: README unificado e apresentação executiva
+- **Sistema de Batalhas GBA**: Implementação precisa do FireRed/LeafGreen
+- **Algoritmo Genético**: Otimização de equipes com 20 gerações
+- **Análise de Performance**: Simulações detalhadas contra Elite Four
+- **151 Pokémon**: Database completo com estatísticas e movesets
+- **5 Membros Elite Four**: Lorelei, Bruno, Agatha, Lance, Champion
+- **Documentação**: README atualizado e CHANGELOG completo
 
 ### 🏆 **Resultados Principais:**
-- **Quinteto Otimizado**: Mr. Mime, Ponyta, Butterfree, Victreebel, Magneton
-- **Taxa de Vitória**: 63.2% contra Elite dos 4
-- **Níveis Recomendados**: 68-77 para cada Pokémon
-- **MVP do Time**: Victreebel com 88% de vitórias
+- **Equipe Otimizada**: Raichu, Moltres, Starmie, Venomoth, Aerodactyl, Dewgong
+- **Taxa de Vitória**: 86.0% contra Elite dos 4
+- **Score de Fitness**: 0.9350 (93.5%)
+- **Performance Individual**: 100% vs Lorelei/Bruno, 98% vs Agatha
+- **Tempo de Otimização**: ~3 segundos
 
 ### 🚀 **Como Executar:**
-```r
-# Pipeline completo
-source('main.R')
+```bash
+# Ativar ambiente virtual
+source venv/bin/activate
 
-# Case técnico (41 perguntas)
-source('docs/case-tecnico/CASE_TECNICO_41_PERGUNTAS.R')
+# Demonstração
+python main.py --mode demo
+
+# Otimização
+python main.py --mode optimize --generations 20 --population 20
+
+# Análise
+python main.py --mode analyze --simulations 50
+
+# Simulação
+python main.py --mode simulate --simulations 30
 ```
 
 ---

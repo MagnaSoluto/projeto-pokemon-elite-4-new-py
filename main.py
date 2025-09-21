@@ -16,6 +16,10 @@ import argparse
 from pathlib import Path
 from typing import List, Optional
 
+# Configura matplotlib para usar backend não-interativo
+import matplotlib
+matplotlib.use('Agg')
+
 # Adiciona o diretório do projeto ao path
 sys.path.append(str(Path(__file__).parent))
 

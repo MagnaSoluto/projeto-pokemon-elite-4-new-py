@@ -2,7 +2,29 @@
 
 [![Python](https://img.shields.io/badge/Python-3.8+-blue.svg)](https://python.org)
 [![License](https://img.shields.io/badge/License-MIT-green.svg)](LICENSE)
-[![Status](https://img.shields.io/badge/Status-Production%20Ready-brightgreen.svg)]()
+[![Status](https://img.shields.io/badge/Status-Concluído-success.svg)](https://github.com/MagnaSoluto/projeto-pokemon-elite-4-new-py.git)
+[![Case Técnico](https://img.shields.io/badge/Case_Técnico-38_Perguntas-orange.svg)](docs/case-tecnico/)
+[![Simulações](https://img.shields.io/badge/Simulações-125_Batalhas-red.svg)](output/tables/)
+[![Modelos](https://img.shields.io/badge/Modelos-4_Algoritmos-purple.svg)](output/models/)
+
+
+
+---
+
+<div align="center">
+
+**🎯 CASE TÉCNICO DE ANÁLISE COM PYTHON**  
+*MBA em Engenharia de Dados - Universidade Presbiteriana Mackenzie*
+
+**👨‍💻 Autores:**  
+Adriano Carvalho dos Santos (RA: 10747203)  
+Jonathas William Freire Borges (RA: 10747100)
+
+**⚔️ Que o melhor treinador vença na Elite dos 4! ⚔️**
+
+---
+
+</div>
 
 ## 📋 Visão Geral
 
@@ -11,11 +33,12 @@ Este projeto implementa um sistema completo de análise e otimização de equipe
 ### 🏆 Resultados Alcançados
 
 - **Sistema Avançado**: Batalhas inteligentes com seleção estratégica de movimentos
-- **Equipe Otimizada**: Kabutops, Magneton, Venusaur, Hitmonchan, Magmar, Articuno
-- **Cobertura de Tipos**: 10 tipos únicos (vs 8 do sistema original)
-- **Performance**: 100% contra Lorelei e Bruno, 85% contra Lance
+- **Equipe Otimizada**: Raichu, Moltres, Starmie, Venomoth, Aerodactyl, Dewgong
+- **Cobertura de Tipos**: 8 tipos únicos com excelente balanceamento
+- **Performance**: 100% contra Lorelei e Bruno, 78% contra Lance, 54% contra Champion
 - **Sistema de Batalhas**: Fórmula GBA precisa com golpes críticos e movesets realistas
 - **Algoritmo de Otimização**: Algoritmo genético avançado com múltiplas estratégias
+- **Score Final**: 0.9350 (93.5% de eficiência geral)
 
 ## 🚀 Características Principais
 
@@ -41,6 +64,13 @@ Este projeto implementa um sistema completo de análise e otimização de equipe
 - **Visualizações**: Gráficos e relatórios automatizados
 - **Relatórios**: Exportação em CSV e TXT
 
+### 📈 Case Técnico - Análise Exploratória
+- **Notebook Python**: 32 questões organizadas em 6 partes técnicas
+- **Análise de Dados**: Pandas, NumPy, Matplotlib e Seaborn
+- **Dataset Pokémon**: 800+ Pokémon com análise completa de tipos e estatísticas
+- **Visualizações Avançadas**: Heatmaps, pairplots, boxplots e histogramas
+- **Exportação de Dados**: Múltiplos formatos CSV para análise posterior
+
 ## 🎯 Equipe Otimizada
 
 ### Sistema Avançado (Recomendado)
@@ -49,12 +79,12 @@ A melhor equipe encontrada pelo sistema avançado:
 
 | # | Pokémon | Nível | Tipos | Total | Vantagens |
 |---|---------|-------|-------|-------|-----------|
-| 1 | **Kabutops** | 60 | Rock/Water | 495 | Cobertura Water + Rock |
-| 2 | **Magneton** | 60 | Electric/Steel | 465 | Resistente + Electric |
-| 3 | **Venusaur** | 60 | Grass/Poison | 525 | Tank + Grass coverage |
-| 4 | **Hitmonchan** | 60 | Fighting | 455 | Fighting coverage |
-| 5 | **Magmar** | 60 | Fire | 495 | Fire coverage |
-| 6 | **Articuno** | 60 | Ice/Flying | 580 | Legendary + Ice coverage |
+| 1 | **Raichu** | 60 | Electric | 485 | Velocidade + Electric coverage |
+| 2 | **Moltres** | 60 | Fire/Flying | 580 | Legendary + Fire/Flying |
+| 3 | **Starmie** | 60 | Water/Psychic | 520 | Water + Psychic coverage |
+| 4 | **Venomoth** | 60 | Bug/Poison | 450 | Bug + Poison coverage |
+| 5 | **Aerodactyl** | 60 | Rock/Flying | 515 | Velocidade + Rock coverage |
+| 6 | **Dewgong** | 60 | Water/Ice | 475 | Water + Ice coverage |
 
 ### Sistema Original (Baseline)
 
@@ -74,9 +104,9 @@ Equipe do sistema original para comparação:
 #### Sistema Avançado:
 - **Lorelei** (Ice): 100.0% vitórias
 - **Bruno** (Fighting): 100.0% vitórias  
-- **Agatha** (Ghost): 45.0% vitórias
-- **Lance** (Dragon): 85.0% vitórias
-- **Champion** (Mixed): 0.0% vitórias
+- **Agatha** (Ghost): 98.0% vitórias
+- **Lance** (Dragon): 78.0% vitórias
+- **Champion** (Mixed): 54.0% vitórias
 
 #### Sistema Original:
 - **Lorelei** (Ice): 100.0% vitórias
@@ -181,7 +211,7 @@ projeto-pokemon-elite-4-new-py/
 │   ├── ANALISE_RESULTADOS.md
 │   ├── DECISOES_CIENTIFICAS.md
 │   ├── METODOLOGIA_CIENTIFICA.md
-│   └── CASE_TECNICO_41_PERGUNTAS_PYTHON.ipynb
+│   └── CASE_TECNICO_38_PERGUNTAS_PYTHON.ipynb # Case técnico - 32 questões Python
 ├── main.py                         # Script principal
 ├── test_advanced_optimization.py   # Teste do sistema avançado
 ├── requirements.txt                # Dependências Python
@@ -215,18 +245,19 @@ projeto-pokemon-elite-4-new-py/
 ## 📊 Resultados Detalhados
 
 ### Performance da Equipe Otimizada
-- **Taxa de Vitória Geral**: 95.24%
-- **Turnos Médios**: 8.3
-- **Convergência**: Estabilizada na geração 6
-- **Tempo de Otimização**: ~40 segundos
+- **Taxa de Vitória Geral**: 86.0% (média ponderada)
+- **Turnos Médios**: 8.2
+- **Convergência**: Estabilizada na geração 20
+- **Tempo de Otimização**: ~3 segundos
+- **Score de Fitness**: 0.9350 (93.5%)
 
 ### Análise por Tipo
-- **Water/Ice** (Lapras): Excelente contra Fire, Ground, Flying
-- **Electric/Steel** (Magneton): Resistente a múltiplos tipos
+- **Electric** (Raichu): Excelente contra Water, Flying
 - **Fire/Flying** (Moltres): Eficaz contra Grass, Bug, Steel
-- **Ghost/Poison** (Gengar): Imune a Normal, Fighting
-- **Psychic** (Mew): Poderoso contra Fighting, Poison
-- **Rock/Ground** (Golem): Forte contra Fire, Electric, Flying
+- **Water/Psychic** (Starmie): Cobertura dupla Water + Psychic
+- **Bug/Poison** (Venomoth): Cobertura contra Grass, Psychic
+- **Rock/Flying** (Aerodactyl): Velocidade + cobertura Rock
+- **Water/Ice** (Dewgong): Cobertura Water + Ice
 
 ## 🎮 Sistema de Batalhas
 
@@ -314,8 +345,8 @@ Para dúvidas, sugestões ou colaborações:
 
 ## 🎯 Resumo Executivo
 
-Este projeto representa uma solução completa e cientificamente rigorosa para o problema de otimização de equipes Pokémon. Através da implementação de um sistema de batalhas fiel aos jogos originais e algoritmos genéticos avançados, conseguimos encontrar uma equipe com **95.24% de taxa de vitória** contra a Elite dos 4.
+Este projeto representa uma solução completa e cientificamente rigorosa para o problema de otimização de equipes Pokémon. Através da implementação de um sistema de batalhas fiel aos jogos originais e algoritmos genéticos avançados, conseguimos encontrar uma equipe com **86.0% de taxa de vitória** contra a Elite dos 4.
 
 A metodologia combina análise de dados, modelagem matemática, otimização computacional e validação estatística, resultando em uma ferramenta robusta e confiável para treinadores Pokémon e pesquisadores em otimização combinatória.
 
-**Status**: ✅ Produção Ready | **Performance**: 🏆 95.24% Vitórias | **Tecnologia**: 🐍 Python 3.8+
+**Status**: ✅ Produção Ready | **Performance**: 🏆 86.0% Vitórias | **Tecnologia**: 🐍 Python 3.8+

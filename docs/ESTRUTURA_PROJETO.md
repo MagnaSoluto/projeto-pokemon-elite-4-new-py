@@ -73,7 +73,7 @@ projeto-pokemon-elite-4-new-py/
 │   │   └── pokemon_performance.csv # Performance individual
 │   └── pokemon_elite_four.log      # Log de execução
 ├── 📁 docs/                        # Documentação
-│   ├── CASE_TECNICO_41_PERGUNTAS_PYTHON.ipynb
+│   ├── CASE_TECNICO_38_PERGUNTAS_PYTHON.ipynb # Case técnico - 32 questões Python
 │   ├── IMPLEMENTACAO_TECNICA.md    # Implementação técnica
 │   ├── ANALISE_RESULTADOS.md       # Análise de resultados
 │   ├── DECISOES_CIENTIFICAS.md     # Decisões científicas
@@ -323,6 +323,72 @@ class ReportGenerator:
     def export_to_markdown(self, report, filename)
     def export_to_html(self, report, filename)
 ```
+
+## 📊 Case Técnico - Análise Exploratória
+
+### Notebook Python (`docs/CASE_TECNICO_38_PERGUNTAS_PYTHON.ipynb`)
+
+#### Responsabilidade
+Demonstrar proficiência em análise de dados Python através de um case técnico completo com 32 questões organizadas em 6 partes.
+
+#### Estrutura do Notebook
+
+##### **Parte 1 - Leitura de Dados (7 questões)**
+- Importação do dataset Pokémon
+- Contextualização do problema de negócio
+- Análise exploratória completa
+- Verificação de dados e qualidade
+
+##### **Parte 2 - Estruturas de Dados Python (6 questões)**
+- Listas de variáveis numéricas e categóricas
+- Dicionários de tipos de variáveis
+- Tuplas com operações numéricas
+- Conjuntos com valores únicos
+- Seleção e slicing de DataFrames
+
+##### **Parte 3 - NumPy (5 questões)**
+- Extração de arrays NumPy
+- Conversões array ↔ DataFrame
+- Operações matriciais e reshape
+- Cálculos estatísticos com NumPy
+
+##### **Parte 4 - Pandas (5 questões)**
+- Seleção condicional de dados
+- Agrupamento e cálculo de médias
+- Merge com DataFrames agregados
+- Análises estatísticas com describe()
+- Tabelas de contingência com crosstab()
+
+##### **Parte 5 - Visualização (6 questões)**
+- Gráficos de linha com Matplotlib
+- Gráficos de barras e histogramas
+- Boxplots para comparações categóricas
+- Heatmaps de correlação
+- Pairplots com Seaborn
+
+##### **Parte 6 - Exportação CSV (3 questões)**
+- Exportação com e sem índice
+- Subsets específicos (apenas numéricas)
+- Verificação e validação dos arquivos
+
+#### Tecnologias Utilizadas
+- **Python 3.x**: Linguagem principal
+- **Pandas**: Manipulação e análise de dados
+- **NumPy**: Operações numéricas e arrays
+- **Matplotlib**: Visualizações básicas
+- **Seaborn**: Visualizações avançadas
+
+#### Arquivos Gerados
+- `dados_trat.csv`: Dataset completo com índice
+- `dados_trat_sem_indice.csv`: Dataset sem índice
+- `subset_numericas.csv`: Apenas colunas numéricas
+
+#### Principais Descobertas
+- **Dataset**: 800+ Pokémon com 7 variáveis numéricas e 5 categóricas
+- **Tipos**: 18 tipos únicos, com Water sendo o mais comum
+- **Gerações**: 6 gerações com distribuição equilibrada
+- **Lendários**: 65 Pokémon lendários com estatísticas superiores
+- **Correlações**: Forte correlação entre Total e outras estatísticas
 
 ## 🔧 Configuração do Projeto
 
