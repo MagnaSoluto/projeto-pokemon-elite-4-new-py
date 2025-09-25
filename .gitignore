@@ -128,9 +128,24 @@ dmypy.json
 # Pyre type checker
 .pyre/
 
-# Output files
-output/
+# Project-specific output files
+output/logs/
+output/temp/
+output/.cache/
 *.log
+
+# Model files
+*.pkl
+*.joblib
+*.h5
+*.model
+*.ckpt
+
+# Data files (keep processed data, ignore temporary)
+data/raw/temp/
+data/temp/
+*.tmp.csv
+*.backup.csv
 
 # IDE files
 .vscode/
@@ -138,6 +153,8 @@ output/
 *.swp
 *.swo
 *~
+.spyproject
+.spyderproject
 
 # OS files
 .DS_Store
@@ -147,7 +164,39 @@ output/
 .Trashes
 ehthumbs.db
 Thumbs.db
+desktop.ini
 
 # Temporary files
 *.tmp
 *.temp
+*.bak
+*.backup
+
+# Jupyter specific
+.ipynb_checkpoints/
+*-checkpoint.ipynb
+
+# Python package management
+poetry.lock
+Pipfile.lock
+requirements-lock.txt
+
+# Development tools
+.pre-commit-config.yaml
+.flake8
+.black
+.isort.cfg
+
+# Profiling
+*.prof
+*.stats
+profile_output/
+
+# Documentation builds
+docs/_build/
+site/
+
+# Local configuration
+local_config.yaml
+.env.local
+config.local.yaml

@@ -1,0 +1,188 @@
+# Configuração do Projeto Pokémon Elite Four
+# ==========================================
+
+# Informações do Projeto
+project:
+  name: "Pokémon Elite Four"
+  version: "2.0.0"
+  author: "Adriano Carvalho dos Santos"
+  description: "Sistema de análise e otimização de equipes Pokémon"
+
+# Configurações de Dados
+data:
+  # Diretórios
+  raw_dir: "data/raw"
+  processed_dir: "data/processed"
+  
+  # Arquivos principais
+  pokemon_data: "pokemon_processed.csv"
+  elite_four_data: "elite_four_data.csv"
+  
+  # Validação
+  validate_data: true
+  backup_data: false
+
+# Configurações de Saída
+output:
+  base_dir: "output"
+  
+  # Subdiretórios
+  models_dir: "models"
+  plots_dir: "plots"  
+  reports_dir: "reports"
+  tables_dir: "tables"
+  analysis_dir: "analysis"
+  optimization_dir: "optimization"
+  
+  # Formato de arquivos
+  image_format: "png"
+  image_dpi: 300
+  csv_encoding: "utf-8"
+
+# Configurações de Batalha
+battle:
+  # Mecânicas básicas
+  max_turns: 100
+  damage_variation: [0.85, 1.0]
+  critical_hit_rate: 6.25
+  
+  # Simulações
+  default_simulations: 100
+  detailed_logging: false
+  save_battle_logs: true
+
+# Configurações do Algoritmo Genético
+genetic_algorithm:
+  # População
+  population_size: 50
+  max_generations: 100
+  
+  # Operadores genéticos
+  crossover_rate: 0.8
+  mutation_rate: 0.1
+  elite_size: 5
+  tournament_size: 3
+  
+  # Fitness
+  fitness_weights:
+    win_rate: 0.4
+    avg_hp_remaining: 0.2
+    type_balance: 0.2
+    stat_balance: 0.2
+  
+  # Convergência
+  convergence_threshold: 0.001
+  stagnation_limit: 20
+
+# Configurações de Otimização (Optuna)
+optuna:
+  # Estudos
+  study_name: "pokemon_team_optimization"
+  direction: "maximize"
+  n_trials: 100
+  
+  # Parâmetros
+  timeout: 3600  # 1 hora
+  n_jobs: 1
+  
+  # Pruning
+  enable_pruning: true
+  pruner: "MedianPruner"
+
+# Configurações de Visualização
+visualization:
+  # Estilo
+  style: "seaborn-v0_8"
+  color_palette: "Set2"
+  figure_size: [10, 8]
+  
+  # Gráficos específicos
+  radar_chart:
+    fill_alpha: 0.3
+    line_width: 2
+  
+  heatmap:
+    cmap: "RdYlBu_r"
+    annot: true
+  
+  # Salvamento
+  save_plots: true
+  show_plots: false
+  bbox_inches: "tight"
+
+# Configurações de Logging
+logging:
+  # Nível
+  level: "INFO"  # DEBUG, INFO, WARNING, ERROR, CRITICAL
+  
+  # Formato
+  format: "%(asctime)s - %(name)s - %(levelname)s - %(message)s"
+  date_format: "%Y-%m-%d %H:%M:%S"
+  
+  # Arquivos
+  file_logging: true
+  log_file: "output/pokemon_elite_four.log"
+  max_file_size: "10MB"
+  backup_count: 5
+  
+  # Console
+  console_logging: true
+  colored_output: true
+
+# Configurações de Performance
+performance:
+  # Multiprocessing
+  use_multiprocessing: false
+  n_processes: 4
+  
+  # Cache
+  enable_cache: true
+  cache_dir: "output/.cache"
+  
+  # Memória
+  memory_limit: "4GB"
+  
+# Configurações de Reprodutibilidade
+reproducibility:
+  # Seeds
+  random_seed: 42
+  numpy_seed: 42
+  
+  # Determinismo
+  deterministic: true
+  
+# Configurações de Desenvolvimento
+development:
+  # Debug
+  debug_mode: false
+  verbose: false
+  
+  # Profiling
+  enable_profiling: false
+  profile_output: "output/profile.stats"
+  
+  # Testes
+  test_data_size: 100
+  quick_test_mode: false
+
+# Configurações Específicas por Modo
+modes:
+  demo:
+    simulations: 10
+    generations: 20
+    quick_analysis: true
+    
+  optimize:
+    simulations: 100
+    generations: 100
+    detailed_analysis: true
+    
+  analyze:
+    simulations: 1000
+    include_plots: true
+    detailed_reports: true
+    
+  simulate:
+    simulations: 500
+    battle_logging: true
+    performance_metrics: true

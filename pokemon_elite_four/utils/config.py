@@ -13,7 +13,7 @@ class Config:
     """Configurações principais do projeto"""
     
     # Diretórios
-    DATA_DIR: str = "data"
+    DATA_DIR: str = "data/processed"
     OUTPUT_DIR: str = "output"
     MODELS_DIR: str = "output/models"
     PLOTS_DIR: str = "output/plots"
@@ -21,7 +21,7 @@ class Config:
     TABLES_DIR: str = "output/tables"
     
     # Arquivos de dados
-    POKEMON_DATA_FILE: str = "pokemon_data.csv"
+    POKEMON_DATA_FILE: str = "pokemon_processed.csv"
     ELITE_FOUR_DATA_FILE: str = "elite_four_data.csv"
     
     # Configurações de batalha

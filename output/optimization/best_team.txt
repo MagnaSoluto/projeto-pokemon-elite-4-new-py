@@ -1,0 +1,31 @@
+MELHOR EQUIPE ENCONTRADA
+==============================
+
+Score: 0.9350
+Gerações: 20
+
+Equipe:
+1. Raichu (Lv.60)
+   Tipos: Electric
+   Total: 485
+
+2. Moltres (Lv.60)
+   Tipos: Fire/Flying
+   Total: 580
+
+3. Starmie (Lv.60)
+   Tipos: Water/Psychic
+   Total: 520
+
+4. Venomoth (Lv.60)
+   Tipos: Bug/Poison
+   Total: 450
+
+5. Aerodactyl (Lv.60)
+   Tipos: Rock/Flying
+   Total: 515
+
+6. Dewgong (Lv.60)
+   Tipos: Water/Ice
+   Total: 475
+

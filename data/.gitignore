@@ -1,0 +1,23 @@
+# Ignora arquivos temporários
+temp/
+*.tmp
+*.temp
+*.backup
+
+# Ignora dados brutos grandes (usar Git LFS se necessário)
+raw/*.csv
+raw/*.json
+raw/*.xlsx
+raw/*.zip
+
+# Mantém dados processados (pequenos e importantes)
+!processed/*.csv
+!processed/*.json
+
+# Ignora logs de processamento
+*.log
+processing_*.txt
+
+# Ignora caches
+.cache/
+__pycache__/
