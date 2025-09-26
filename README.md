@@ -1,11 +1,13 @@
 # 🎮 Pokémon Elite Four - Sistema de Análise e Otimização
 
-[![Python](https://img.shields.io/badge/Python-3.8+-blue.svg)](https://python.org)
+[![Python](https://img.shields.io/badge/Python-3.13+-blue.svg)](https://python.org)
 [![License](https://img.shields.io/badge/License-MIT-green.svg)](LICENSE)
 [![Status](https://img.shields.io/badge/Status-Concluído-success.svg)](https://github.com/MagnaSoluto/projeto-pokemon-elite-4-new-py.git)
-[![Case Técnico](https://img.shields.io/badge/Case_Técnico-38_Perguntas-orange.svg)](docs/case-tecnico/)
-[![Simulações](https://img.shields.io/badge/Simulações-125_Batalhas-red.svg)](output/tables/)
-[![Modelos](https://img.shields.io/badge/Modelos-4_Algoritmos-purple.svg)](output/models/)
+[![Case Técnico](https://img.shields.io/badge/Case_Técnico-38_Perguntas-orange.svg)](docs/CASE_TECNICO_38_PERGUNTAS_PYTHON.ipynb)
+[![Apresentação](https://img.shields.io/badge/Apresentação-Interativa-brightgreen.svg)](docs/APRESENTACAO_COMPLETA.ipynb)
+[![Testes](https://img.shields.io/badge/Testes-45_Passando-success.svg)](tests/)
+[![Score](https://img.shields.io/badge/Score-93.5%25-gold.svg)](output/optimization/best_team.txt)
+[![Qualidade](https://img.shields.io/badge/Qualidade-Profissional-purple.svg)](pyproject.toml)
 
 
 
@@ -65,11 +67,20 @@ Este projeto implementa um sistema completo de análise e otimização de equipe
 - **Relatórios**: Exportação em CSV e TXT
 
 ### 📈 Case Técnico - Análise Exploratória
-- **Notebook Python**: 32 questões organizadas em 6 partes técnicas
+- **Notebook Python**: 38 questões organizadas em 6 partes técnicas
 - **Análise de Dados**: Pandas, NumPy, Matplotlib e Seaborn
 - **Dataset Pokémon**: 800+ Pokémon com análise completa de tipos e estatísticas
 - **Visualizações Avançadas**: Heatmaps, pairplots, boxplots e histogramas
 - **Exportação de Dados**: Múltiplos formatos CSV para análise posterior
+- **Instalação Automática**: Dependências instaladas automaticamente no notebook
+
+### 🎮 Apresentação Interativa
+- **Notebook de Apresentação**: 17 células com demonstrações ao vivo
+- **Contexto Histórico**: História completa do Pokémon no Brasil
+- **6 Slides Estruturados**: Apresentação otimizada para 7 minutos
+- **Código Executável**: Demonstrações interativas do sistema
+- **Visualizações Dinâmicas**: Gráficos matplotlib integrados
+- **Simulação Completa**: Algoritmo genético executando em tempo real
 
 ## 🎯 Equipe Otimizada
 
@@ -116,6 +127,36 @@ Equipe do sistema original para comparação:
 - **Champion** (Mixed): 48.0% vitórias
 
 ## 🛠️ Instalação e Uso
+
+## 🎮 Apresentação Interativa
+
+### 📋 Como Executar a Apresentação
+
+Para executar a **apresentação interativa completa**:
+
+```bash
+cd projeto-pokemon-elite-4-new-py
+source venv/bin/activate
+jupyter notebook docs/APRESENTACAO_COMPLETA.ipynb
+```
+
+### 🎯 Estrutura da Apresentação (7 minutos)
+
+- **🎯 Contexto Histórico**: Pokémon no Brasil + desafio científico
+- **📊 Slide 1**: Problema de otimização (16.8 bilhões de combinações)
+- **🏗️ Slide 2**: Arquitetura tecnológica + métricas do projeto
+- **📓 Slide 3**: Case técnico (38 questões) + verificação dos dados
+- **🏆 Slide 4**: Equipe otimizada + gráfico de performance
+- **🔬 Slide 5**: Validação científica + testes de qualidade
+- **🎮 Slide 6**: Demonstração ao vivo + simulação completa
+
+### ✨ Recursos Interativos
+
+- **Código Executável**: Todas as demonstrações rodam ao vivo
+- **Gráficos Dinâmicos**: Matplotlib integrado com dados reais
+- **Simulação Realista**: Algoritmo genético com barra de progresso
+- **Métricas em Tempo Real**: Verificação do projeto executando
+- **Contexto Completo**: História do Pokémon no Brasil incluída
 
 ### Pré-requisitos
 - Python 3.8+

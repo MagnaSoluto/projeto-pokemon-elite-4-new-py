@@ -5,6 +5,38 @@ Todas as mudanças notáveis neste projeto serão documentadas neste arquivo.
 O formato é baseado em [Keep a Changelog](https://keepachangelog.com/pt-BR/1.0.0/),
 e este projeto adere ao [Versionamento Semântico](https://semver.org/lang/pt-BR/).
 
+## [2.1.0] - 2025-09-26
+
+### 🎮 Apresentação Interativa Completa
+- **Notebook de apresentação** com 17 células interativas
+- **Contexto histórico** completo do Pokémon no Brasil
+- **6 slides estruturados** para apresentação de 7 minutos
+- **Demonstrações ao vivo** com código executável
+- **Visualizações matplotlib** integradas
+- **Simulação completa** do algoritmo genético
+
+### 🏗️ Melhorias de Arquitetura
+- **pyproject.toml** configurado com padrões modernos
+- **config.yaml** para configurações centralizadas
+- **45 testes automatizados** implementados
+- **Makefile** com 25+ comandos de automação
+- **Estrutura data/raw e data/processed** organizada
+- **.gitignore** aprimorado para projeto Python
+
+### 📊 Case Técnico Python
+- **38 questões** 100% funcionais no Jupyter
+- **Instalação automática** de dependências
+- **Correções implementadas** (reshape, line plots)
+- **Validação completa** dos dados
+- **Análise exploratória** detalhada
+
+### 🎯 Documentação Científica
+- **Apresentação completa** em notebook interativo
+- **Contexto histórico** do fenômeno Pokémon
+- **Evolução da análise** comparada ao trabalho anterior
+- **Métricas de qualidade** comprovadas
+- **Reprodutibilidade total** garantida
+
 ## [2.0.0] - 2025-09-20
 
 ### 🐍 Migração Completa para Python
